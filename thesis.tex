@@ -1,0 +1,94 @@
+\documentclass[a4paper,11pt]{kth-mag}
+\usepackage{glossaries}
+\glsdisablehyper
+\usepackage{textcomp}
+\usepackage[table]{xcolor}
+\usepackage[hidelinks]{hyperref}
+\usepackage{todonotes}
+\usepackage{lmodern}
+\usepackage{amsmath}
+\usepackage{amsthm}
+\usepackage{url}
+\usepackage[swedish,english]{babel}
+\usepackage{modifications}
+\usepackage{multirow}
+\usepackage{textcomp}
+\usepackage{listings}
+\usepackage{color}
+\usepackage{amssymb}
+\usepackage{dirtree}
+\usepackage{array}
+\usepackage{pdfpages}
+\usepackage{longtable}
+
+\extrafloats{1000}
+
+
+\bibliographystyle{ieeetran}
+\title{Title goes here}
+
+\subtitle{Thesis WIP}
+\foreigntitle{Title in Swedish goes here}
+
+\author{Firstname Lastname}
+\date{\today}
+\blurb{Master's Thesis at ITM\\Supervisor: Firstname Lastname \\ Examiner: Firstname Lastname}
+\trita{TRITA xxx yyyy-nn}
+\begin{document}
+\frontmatter
+\pagestyle{empty}
+\removepagenumbers
+\maketitle
+\selectlanguage{english}
+
+
+\clearpage
+\begin{abstract}
+
+Write the abstract here.
+
+\end{abstract}
+\clearpage
+\begin{foreignabstract}{swedish}
+
+Abstract in Swedish goes here.
+
+\end{foreignabstract}
+\clearpage
+
+\chapter*{Acknowledgements}
+
+I would like to thank...
+
+\clearpage
+\tableofcontents*
+\clearpage
+\listoffigures*
+\clearpage
+\listoftables*
+\printglossaries
+\mainmatter
+\pagestyle{newchap}
+
+\chapter{Introduction}
+This is what a chapter looks like.
+
+\section{Section}
+
+This is what a section looks like.
+
+\subsection{Sub-Section}
+This is what a subsection looks like.
+
+\paragraph{Paragraph} This is what a paragraph looks like.
+
+
+
+%\bibliography{thesisrefs}
+\appendix
+\addappheadtotoc
+\chapter{First Appendix}
+
+Appendix text goes here.
+
+\end{document}
