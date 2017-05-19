@@ -1,9 +1,5 @@
 This is BibTeX, Version 0.99dThe top-level auxiliary file: BrakeController.aux
 The style file: ieeetran.bst
-Illegal, another \bibstyle command---line 77 of file BrakeController.aux
- : \bibstyle
- :          {plain}
-I'm skipping whatever remains of this command
 Database file #1: mybib.bib
 Warning--entry type for "truongdevelopment" isn't style-file defined
 --line 102 of file mybib.bib
@@ -12,4 +8,4 @@ Warning--entry type for "truongdevelopment" isn't style-file defined
 -- See the "IEEEtran_bst_HOWTO.pdf" manual for usage information.
 
 Done.
-(There was 1 error message)
+(There was 1 warning)

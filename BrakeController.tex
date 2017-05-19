@@ -22,11 +22,14 @@
 \usepackage{pdfpages}
 \usepackage{longtable}
 
-\usepackage{comment} % enables the use of multi-line comments (\ifx \fi) 
-\usepackage{fullpage} % changes the margin
-\usepackage[utf8]{inputenc}
-\usepackage[T1]{fontenc}
-\usepackage{graphicx} %To use pictures
+%\usepackage{comment} % enables the use of multi-line comments (\ifx \fi) 
+%\usepackage{fullpage} % changes the margin
+%\usepackage[utf8]{inputenc}
+%\usepackage[T1]{fontenc}
+%\usepackage{graphicx} %To use pictures
+
+
+
 
 \extrafloats{1000}
 
@@ -67,13 +70,16 @@ Abstract in Swedish goes here.
 
 I would like to thank...
 
+
 \chapter*{Abbreviations}
 \addcontentsline{toc}{chapter}{Abbreviations}
 \noindent{}\begin{tabular}{r  l}
 \textbf{Abbreviation} 	& \textbf{Description} \vspace{.5em} \\
-DC			&Direct Current\\
-ITRL    &Integrated Transport Research Lab\\
-
+ABS			& Anti-lock braking system\\
+DC			& Direct Current\\
+ITRL   		& Integrated Transport Research Lab\\
+RCV 			& Research concept vehicle\\
+PID			& Proportional-Integral-Derivative
 
 \end{tabular}
 
@@ -85,13 +91,18 @@ ITRL    &Integrated Transport Research Lab\\
 \listoffigures*
 \clearpage
 \listoftables*
+\glsaddall
+
+\newacronym{RCV}{RCV}{Research concept vehicle}  
 \printglossaries
+\
 \mainmatter
 \pagestyle{newchap}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 \chapter{Introduction}
+
 This is what a chapter looks like.
 
 \section{Section}
@@ -104,20 +115,25 @@ This is what a subsection looks like.
 \paragraph{Paragraph} This is what a paragraph looks like.
 
 \section{Background}
-The Research Concept Vehicle (RCV) at KTH is a platform for research in vehicle autonomy and vehicle dynamics. For precise autonomous operation, accurate actuation of steering input and wheel torque is critical. The electrical wheel motors of the RCV can produce torque for acceleration and braking up to a limit. However, for hard braking maneuvers, regenerative braking is not sufficient and a hydraulic brake system actuated by electric linear actuators is used in addition. In the current configuration, the hydraulic brakes actuate fairly slow (>1s before braking request is met). Thus, a redesign of the control software and possibly the mechanical assembly is needed. The task is challenging due to the non-linear and environment dependent dynamics of the hydraulic system.
+
+ 
+The \gls{RCV} at KTH is a platform for research in vehicle autonomy and vehicle dynamics. For precise autonomous operation, accurate actuation of steering input and wheel torque is critical. The electrical wheel motors of the \gls{RCV} can produce torque for acceleration and braking up to a limit. However, for hard braking maneuvers, regenerative braking is not sufficient and a hydraulic brake system actuated by electric linear actuators is used in addition. In the current configuration, the hydraulic brakes actuate fairly slow (>1s before braking request is met). Thus, a redesign of the control software and possibly the mechanical assembly is needed. The task is challenging due to the non-linear and environment dependent dynamics of the hydraulic system.
 
 
 \section{Research design/Methodology}
 The methodology used for this project will be a case study of how to implement one or more brake controllers, which works best for solving the problem stated together with a comparison of the controllers advantages and disadvantages. The case study will have its focus on qualitative research, as there's extensive work already done withing this area. The testing will also have a qualitative orientation in the end to validate the brake model as well as how the controller performs. 
 
+\section{Delimitations}
+A lot of aspects affects the behavior of the brakes, and thus not everything can be included in the scope for a thesis. The focus will lie in building a efficient and robust controller for the electrohydraulic brake as well as implementing a basic brake blending algorithm. Hence, aspects like wheel slip, ABS functions and split mu will not be taken into consideration while designing the brake system. 
+
 \section{Ethics}
 Brakes is a vital part of the safety of a vehicle. Although this project handles the brakes while in autonomous drive mode, there will still be one or two people in the car monitoring the autonomous driving, whom might be susceptible to great risks if the brakes do not work. To keep the safety of the vehicle at acceptable levels there is a manual brake pedal that overrides the autonomous drive mode, and brakes the vehicle if necessary. This brake pedal is controlled by the person in the drivers seat, who has experience with the vehicle and is much aware of the risks and behavior of the car. 
 
-The vehicle is not legal to drive in regular traffic, and thus is only driven in big confined areas, such as a rented runway on Arlanda or in a closed off parking lot, where it is driven at low speeds of up to 45 km/h. The vehicle is also equipped with seat belts dimensioned for racing. 
+The vehicle is not legal to drive in regular traffic, and thus is only driven in big closed off areas, such as a rented runway on Arlanda or in a closed off parking lot, where it is driven at low speeds of up to 45 km/h. The vehicle is also equipped with seat belts dimensioned for racing. 
 It is an electric car so the people around wont be exposed to any harmful exhausts. 
 
 
-\section{Risk assessment???}
+\section{Risk assessment}
 The risks that is involved with this project include the availability of the RCV as well as that ordered hardware gets here on time. Concerning the availability of the RCV is mainly concerning test. I do not know how to drive the vehicle or how the whole system works, so I will need help doing the tests. Since the testing phase and later parts of the thesis takes place during summer, I might need to change my plan to match peoples vacation. \newline
 
 Concerning the hardware, the actuators that are mounted on the vehicle is relatively slow, and the system will need to be upgraded to achieve a fast enough response time. The lead times in deliveries must be taken into considerations in the time plan.
@@ -127,6 +143,8 @@ Concerning the hardware, the actuators that are mounted on the vehicle is relati
 - Speed of the actuators, in ms before request to actual torque meet.
 
 - Should it be optimized for torque meet, or regeneration? that is, should the regenerative me used as torquefill or as main brake? Probably torque fill.
+
+- Maximum negative acceleration/ deceleration.
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
@@ -166,7 +184,21 @@ The brake blending algorithm will be a simple one where the regenerative brakes 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 \chapter{Results}
-This is what a chapter looks like.
+This chapter presents the results of the thesis.
+\section*{Hardware}
+The highest needed braking torque on each wheel was calculated with respect to the maximum negative acceleration that is stated in the requirements. If the acceleration is known, as well as the mass of the vehicle the total force that needs to act on the vehicle can be calculated with Newtons second law, 
+\begin{equation}
+F_{tot}=m\cdot a,
+\end{equation}
+where $F_{tot}$ is the total force needed to achieve acceptable deceleration, $m$ is the mass of the vehicle and $a$ is the acceleration. The vehicle has four wheels and the force is considered to be divided evenly distributed on each wheel. Hence, this gives us 
+\begin{equation}
+F_{wheel}=\frac{F_{tot}}{4},
+\end{equation}
+where $F_{wheel}$ is the force needed on each wheel. The torque needed on that wheel can then be calculated by 
+\begin{equation}
+M=F_{wheel}\cdot r,
+\end{equation}
+where $M$ is the torque and $r$ is the radius of the wheel. The required torque on each wheel was calculated to 350 Nm.
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 \chapter{Conclusion}
@@ -183,12 +215,12 @@ This is what a chapter looks like.
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 
-\bibliographystyle{plain}
 \bibliography{mybib}
 \appendix
 \addappheadtotoc
 \chapter{First Appendix}
 
 Appendix text goes here.
-
+\glsaddall
+\printglossaries
 \end{document}
