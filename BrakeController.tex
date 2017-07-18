@@ -1,6 +1,6 @@
 
 \documentclass[a4paper,11pt]{kth-mag}
-\usepackage{glossaries}
+\usepackage[acronym]{glossaries}
 \glsdisablehyper
 \usepackage{textcomp}
 \usepackage[table]{xcolor}
@@ -22,6 +22,7 @@
 \usepackage{pdfpages}
 \usepackage{longtable}
 
+
 %\usepackage{comment} % enables the use of multi-line comments (\ifx \fi) 
 %\usepackage{fullpage} % changes the margin
 %\usepackage[utf8]{inputenc}
@@ -30,20 +31,18 @@
 
 
 
-
 \extrafloats{1000}
-
-
 \bibliographystyle{ieeetran}
 \title{Title goes here}
-
 \subtitle{Thesis WIP}
 \foreigntitle{Title in Swedish goes here}
-
 \author{Richard Odell}
 \date{\today}
 \blurb{Master's Thesis at ITM\\Supervisor: Lars Svensson \\ Examiner: Lei Feng}
 \trita{TRITA xxx yyyy-nn}
+
+
+
 \begin{document}
 \frontmatter
 \pagestyle{empty}
@@ -71,20 +70,19 @@ Abstract in Swedish goes here.
 I would like to thank...
 
 
-\chapter*{Abbreviations}
-\addcontentsline{toc}{chapter}{Abbreviations}
-\noindent{}\begin{tabular}{r  l}
-\textbf{Abbreviation} 	& \textbf{Description} \vspace{.5em} \\
-ABS			& Anti-lock braking system\\
-DC			& Direct Current\\
-ITRL   		& Integrated Transport Research Lab\\
-RCV 			& Research concept vehicle\\
-PID			& Proportional-Integral-Derivative
+%\chapter*{Abbreviations}
+%\addcontentsline{toc}{chapter}{Abbreviations}
+%\noindent{}\begin{tabular}{r  l}
+%\textbf{Abbreviation} 	& \textbf{Description} \vspace{.5em} \\
+%ABS			& Anti-lock braking system\\
+%DC			& Direct Current\\
+%ITRL   		& Integrated Transport Research Lab\\
+%RCV 			& Research concept vehicle\\
+%PID			& Proportional-Integral-Derivative
 
-\end{tabular}
+%\end{tabular}
 
 \clearpage
-
 \clearpage
 \tableofcontents*
 \clearpage
@@ -93,9 +91,8 @@ PID			& Proportional-Integral-Derivative
 \listoftables*
 \glsaddall
 
-\newacronym{RCV}{RCV}{Research concept vehicle}  
-\printglossaries
-\
+
+
 \mainmatter
 \pagestyle{newchap}
 
@@ -127,7 +124,7 @@ The methodology used for this project will be a case study of how to implement o
 A lot of aspects affects the behavior of the brakes, and thus not everything can be included in the scope for a thesis. The focus will lie in building a efficient and robust controller for the electrohydraulic brake as well as implementing a basic brake blending algorithm. Hence, aspects like wheel slip, ABS functions and split mu will not be taken into consideration while designing the brake system. 
 
 \section{Ethics}
-Brakes is a vital part of the safety of a vehicle. Although this project handles the brakes while in autonomous drive mode, there will still be one or two people in the car monitoring the autonomous driving, whom might be susceptible to great risks if the brakes do not work. To keep the safety of the vehicle at acceptable levels there is a manual brake pedal that overrides the autonomous drive mode, and brakes the vehicle if necessary. This brake pedal is controlled by the person in the drivers seat, who has experience with the vehicle and is much aware of the risks and behavior of the car. 
+Brakes is one of the most vital part to the safety of a vehicle. Although this project handles the brakes while in autonomous drive mode, there will still be one or two people in the car monitoring the autonomous driving, whom might be susceptible to great risks if the brakes do not work. To keep the safety of the vehicle at acceptable levels there is a manual brake pedal that overrides the autonomous drive mode, and brakes the vehicle if necessary. This brake pedal is controlled by the person in the drivers seat, who has experience with the vehicle and is much aware of the risks and behavior of the car. 
 
 The vehicle is not legal to drive in regular traffic, and thus is only driven in big closed off areas, such as a rented runway on Arlanda or in a closed off parking lot, where it is driven at low speeds of up to 45 km/h. The vehicle is also equipped with seat belts dimensioned for racing. 
 It is an electric car so the people around wont be exposed to any harmful exhausts. 
@@ -149,7 +146,8 @@ Concerning the hardware, the actuators that are mounted on the vehicle is relati
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 \chapter{Background study}
-\section{Frame of reference}
+This section presents the background study
+\section*{Frame of reference}
 The literature search was done directly in the IEEE Xplore database as well as Google Scholar. The search began with broad definitions as 'braking system autonomous driving' as well as 'braking control methods in autonomous driving', which resulted in a few methods that appeared frequently. These methods where then included in the search, together with searches solely for that method.
 
 
@@ -222,5 +220,4 @@ This is what a chapter looks like.
 
 Appendix text goes here.
 \glsaddall
-\printglossaries
 \end{document}
