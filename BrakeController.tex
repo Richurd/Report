@@ -1,5 +1,6 @@
 
 \documentclass[a4paper,11pt]{kth-mag}
+
 \usepackage[acronym]{glossaries}
 \glsdisablehyper
 \usepackage{textcomp}
@@ -21,6 +22,11 @@
 \usepackage{array}
 \usepackage{pdfpages}
 \usepackage{longtable}
+\usepackage[acronym]{glossaries}
+%\usepackage[automake]{glossaries}
+
+
+
 
 
 %\usepackage{comment} % enables the use of multi-line comments (\ifx \fi) 
@@ -30,6 +36,7 @@
 %\usepackage{graphicx} %To use pictures
 
 
+\makeglossaries
 
 \extrafloats{1000}
 \bibliographystyle{ieeetran}
@@ -42,8 +49,14 @@
 \trita{TRITA xxx yyyy-nn}
 
 
+\newacronym{RCV}{RCV}{Research Concept Vehicle}
+\newacronym{ro}{RO}{Richard Odell}
+
+
+
 
 \begin{document}
+
 \frontmatter
 \pagestyle{empty}
 \removepagenumbers
@@ -81,6 +94,10 @@ I would like to thank...
 %PID			& Proportional-Integral-Derivative
 
 %\end{tabular}
+\glsaddall
+\printglossary
+\printglossary[type=\acronymtype,nonumberlist]
+%[type=main,style=long,nonumberlist]
 
 \clearpage
 \clearpage
@@ -115,6 +132,7 @@ This is what a subsection looks like.
 
  
 The \gls{RCV} at KTH is a platform for research in vehicle autonomy and vehicle dynamics. For precise autonomous operation, accurate actuation of steering input and wheel torque is critical. The electrical wheel motors of the \gls{RCV} can produce torque for acceleration and braking up to a limit. However, for hard braking maneuvers, regenerative braking is not sufficient and a hydraulic brake system actuated by electric linear actuators is used in addition. In the current configuration, the hydraulic brakes actuate fairly slow (>1s before braking request is met). Thus, a redesign of the control software and possibly the mechanical assembly is needed. The task is challenging due to the non-linear and environment dependent dynamics of the hydraulic system.
+\gls{ro}.
 
 
 \section{Research design/Methodology}
@@ -209,6 +227,10 @@ This is what a chapter looks like.
 
 \chapter{Future work}
 This is what a chapter looks like.
+\\
+\glsaddall
+\printglossary
+\printglossary[type=\acronymtype]
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
