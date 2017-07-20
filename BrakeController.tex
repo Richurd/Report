@@ -23,7 +23,7 @@
 \usepackage{pdfpages}
 \usepackage{longtable}
 \usepackage[acronym]{glossaries}
-%\usepackage[automake]{glossaries}
+
 
 
 
@@ -37,6 +37,7 @@
 
 
 \makeglossaries
+\setlength\parindent{0pt}
 
 \extrafloats{1000}
 \bibliographystyle{ieeetran}
@@ -49,8 +50,15 @@
 \trita{TRITA xxx yyyy-nn}
 
 
-\newacronym{RCV}{RCV}{Research Concept Vehicle}
-\newacronym{ro}{RO}{Richard Odell}
+\newacronym{rcv}{RCV}{Research Concept Vehicle}
+\newacronym{mpc}{MPC}{Model Predictive Control}
+\newacronym{itrl}{ITRL}{Integrated Transport Research Lab}
+\newacronym{pi}{PI}{Proportional-Integral}
+\newacronym{abs}{ABS}{Anti-lock Braking System}
+\newacronym{dc}{DC}{Direct Current}
+\newacronym{pid}{PID}{Proportional-Integral-Derivative}
+\newacronym{kth}{KTH}{The Royal Institute of Technology}
+
 
 
 
@@ -83,21 +91,11 @@ Abstract in Swedish goes here.
 I would like to thank...
 
 
-%\chapter*{Abbreviations}
-%\addcontentsline{toc}{chapter}{Abbreviations}
-%\noindent{}\begin{tabular}{r  l}
-%\textbf{Abbreviation} 	& \textbf{Description} \vspace{.5em} \\
-%ABS			& Anti-lock braking system\\
-%DC			& Direct Current\\
-%ITRL   		& Integrated Transport Research Lab\\
-%RCV 			& Research concept vehicle\\
-%PID			& Proportional-Integral-Derivative
 
-%\end{tabular}
 \glsaddall
 \printglossary
 \printglossary[type=\acronymtype,nonumberlist]
-%[type=main,style=long,nonumberlist]
+
 
 \clearpage
 \clearpage
@@ -117,29 +115,19 @@ I would like to thank...
 
 \chapter{Introduction}
 
-This is what a chapter looks like.
-
-\section{Section}
-
-This is what a section looks like.
-
-\subsection{Sub-Section}
-This is what a subsection looks like.
-
-\paragraph{Paragraph} This is what a paragraph looks like.
+This chapter will give an introduction to the thesis. 
 
 \section{Background}
 
  
-The \gls{RCV} at KTH is a platform for research in vehicle autonomy and vehicle dynamics. For precise autonomous operation, accurate actuation of steering input and wheel torque is critical. The electrical wheel motors of the \gls{RCV} can produce torque for acceleration and braking up to a limit. However, for hard braking maneuvers, regenerative braking is not sufficient and a hydraulic brake system actuated by electric linear actuators is used in addition. In the current configuration, the hydraulic brakes actuate fairly slow (>1s before braking request is met). Thus, a redesign of the control software and possibly the mechanical assembly is needed. The task is challenging due to the non-linear and environment dependent dynamics of the hydraulic system.
-\gls{ro}.
+The \gls{rcv} at \gls{kth} is a platform for research in vehicle autonomy and vehicle dynamics. For precise autonomous operation, accurate actuation of steering input and wheel torque is critical. The electrical wheel motors of the \gls{rcv} can produce torque for acceleration and braking up to a limit. However, for hard braking maneuvers, regenerative braking is not sufficient and a hydraulic brake system actuated by electric linear actuators is used in addition. In the current configuration, the hydraulic brakes actuate fairly slow (>1s before braking request is met). Thus, a redesign of the control software and the mechanical assembly is needed. The task is challenging due to the non-linear and environment dependent dynamics of the hydraulic system.
 
 
 \section{Research design/Methodology}
 The methodology used for this project will be a case study of how to implement one or more brake controllers, which works best for solving the problem stated together with a comparison of the controllers advantages and disadvantages. The case study will have its focus on qualitative research, as there's extensive work already done withing this area. The testing will also have a qualitative orientation in the end to validate the brake model as well as how the controller performs. 
 
 \section{Delimitations}
-A lot of aspects affects the behavior of the brakes, and thus not everything can be included in the scope for a thesis. The focus will lie in building a efficient and robust controller for the electrohydraulic brake as well as implementing a basic brake blending algorithm. Hence, aspects like wheel slip, ABS functions and split mu will not be taken into consideration while designing the brake system. 
+A lot of aspects affects the behavior of the brakes, and thus not everything can be included in the scope for a thesis. The focus will lie in building an efficient and robust controller for the electrohydraulic brake as well as implementing a basic brake blending algorithm. Hence, aspects like wheel slip, \gls{abs} functions and split mu will not be taken into consideration while designing the brake system. 
 
 \section{Ethics}
 Brakes is one of the most vital part to the safety of a vehicle. Although this project handles the brakes while in autonomous drive mode, there will still be one or two people in the car monitoring the autonomous driving, whom might be susceptible to great risks if the brakes do not work. To keep the safety of the vehicle at acceptable levels there is a manual brake pedal that overrides the autonomous drive mode, and brakes the vehicle if necessary. This brake pedal is controlled by the person in the drivers seat, who has experience with the vehicle and is much aware of the risks and behavior of the car. 
@@ -149,7 +137,7 @@ It is an electric car so the people around wont be exposed to any harmful exhaus
 
 
 \section{Risk assessment}
-The risks that is involved with this project include the availability of the RCV as well as that ordered hardware gets here on time. Concerning the availability of the RCV is mainly concerning test. I do not know how to drive the vehicle or how the whole system works, so I will need help doing the tests. Since the testing phase and later parts of the thesis takes place during summer, I might need to change my plan to match peoples vacation. \newline
+The risks that is involved with this project include the availability of the \gls{rcv} as well as that ordered hardware gets here on time. Concerning the availability of the \gls{rcv} is mainly concerning test. I do not know how to drive the vehicle or how the whole system works, so I will need help doing the tests. Since the testing phase and later parts of the thesis takes place during summer, I might need to change my plan to match peoples vacation. \newline
 
 Concerning the hardware, the actuators that are mounted on the vehicle is relatively slow, and the system will need to be upgraded to achieve a fast enough response time. The lead times in deliveries must be taken into considerations in the time plan.
 
@@ -174,26 +162,26 @@ Yu et al. \cite{Yu} discusses differences in a linearly actuated system vs a hyd
 
 
 \vspace{5mm}
-Line, Manzie and Good \cite{4475522} has constructed a electro-mechanical  brake-by-wire system, which utilizes an electrical motor in the calipers as actuator that controls the pressure of the brake pads. There is also a brake pedal that sense the pedal position which in turn sends the brake request to a controller. They compare two different controllers in this paper, a cascaded PI controller and a model predictive control (MPC). The cascaded PI controller has three control loops for force, motor angular velocity and motor current. The PI controller works, but due to the systems nonlinearity it is somewhat inconsistent in different situations. The MPC performs better in this case, but in order for it to work this efficiently a very good model of the system is needed as ground work, and this might be time consuming. \newline
+Line, Manzie and Good \cite{4475522} has constructed a electro-mechanical  brake-by-wire system, which utilizes an electrical motor in the calipers as actuator that controls the pressure of the brake pads. There is also a brake pedal that sense the pedal position which in turn sends the brake request to a controller. They compare two different controllers in this paper, a cascaded \gls{pi} controller and a \gls{mpc}. The cascaded \gls{pi} controller has three control loops for force, motor angular velocity and motor current. The \gls{pi} controller works, but due to the systems nonlinearity it is somewhat inconsistent in different situations. The \gls{mpc} performs better in this case, but in order for it to work this efficiently a very good model of the system is needed as ground work, and this might be time consuming. \newline
 
 
 Xiang et al. \cite{Xiang} writes that a electro-mechanical system is preferable over a electro-hydraulical system, due to the simplicity, the efficiency and stability, the enhanced diagnostic capabilities, cost reduction, space and weight saving as well as the elimination of environmental concerns associated with traditional hydraulic braking systems.\newline
 
 %\vspace{5mm}
-Line, Manzie and Good \cite{2004-01-2050} as well as in Ahn et al. \cite{ahn2009analysis} is articles about using a cascaded PI controller to control a electro-mechanical brake-by-wire system. Here they present requirements on a electromechanical braking system. They discuss the influence of friction, which makes the system nonlinear. The nonlinearity is discussed in the conclusion, where the nonlinear system is the explanation why the cascaded pi controller does not work as fast in the lower brake pad force spectrum as it does for the higher part of the spectrum. \newline
+Line, Manzie and Good \cite{2004-01-2050} as well as in Ahn et al. \cite{ahn2009analysis} is articles about using a cascaded \gls{pi} controller to control a electro-mechanical brake-by-wire system. Here they present requirements on a electromechanical braking system. They discuss the influence of friction, which makes the system nonlinear. The nonlinearity is discussed in the conclusion, where the nonlinear system is the explanation why the cascaded pi controller does not work as fast in the lower brake pad force spectrum as it does for the higher part of the spectrum. \newline
 
 
 
 Frede, Khodabakhshian and Malmquist \cite{Frede460614} has done a state-of-the-art report on by-wire systems, with an extensive part about brake-by-wire. They present an overview of brake blending strategies as well as control strategies to regulate braking torque. Most reports discuss brake blending control, but reports where  brake torque control is achieved by fuzzy logic is presented as well. Isermann \cite{661149} also describes the strengths of a fuzzy logic controller, due to its ability to handle nonlinear systems. \newline
 
-Milan{\'e}s et al. \cite{milanes2010electro} presents in an article how an autonomous braking system is implemented into a ordinary road car. The car is already fitted with a hydraulic braking system with a manually controlled braking pedal, and the autonomous braking system is added on to that, resulting in a electro-hydraulic autonomous braking system similar to that on the RCV. 
-Although the actuator in this car is a electric pump compared to a linear actuator on the RCV, this report shows that a electro-hydraulic system is satisfactory, even though other reports state that electro-mechanical systems are preferable \cite{MechatronicsBook} \cite{Xiang}. \newline
+Milan{\'e}s et al. \cite{milanes2010electro} presents in an article how an autonomous braking system is implemented into a ordinary road car. The car is already fitted with a hydraulic braking system with a manually controlled braking pedal, and the autonomous braking system is added on to that, resulting in a electro-hydraulic autonomous braking system similar to that on the \gls{rcv}. 
+Although the actuator in this car is a electric pump compared to a linear actuator on the \gls{rcv}, this report shows that a electro-hydraulic system is satisfactory, even though other reports state that electro-mechanical systems are preferable \cite{MechatronicsBook} \cite{Xiang}. \newline
 
 The brake blending will be done by a simple function where the regenerative brakes brakes as much as possible, and when they have reached their maximum braking power, the friction brakes steps in to fill in the missing torque, as described by Troung \cite{truongdevelopment}. \newline
 
 
 \section*{Results}
-The results from the literature study is that the two friction brake controllers will consist of a PID controller and a fuzzy logic controller. 
+The results from the literature study is that the two friction brake controllers will consist of a \gls{pid} controller and a fuzzy logic controller. 
 The brake blending algorithm will be a simple one where the regenerative brakes brake as much as possible, and the friction brakes fills in the missing torque. 
 
 
