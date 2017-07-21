@@ -29,6 +29,7 @@
 
 
 
+
 %\usepackage{comment} % enables the use of multi-line comments (\ifx \fi) 
 %\usepackage{fullpage} % changes the margin
 %\usepackage[utf8]{inputenc}
@@ -51,7 +52,7 @@
 
 
 \newacronym{rcv}{RCV}{Research Concept Vehicle}
-\newacronym{mpc}{MPC}{Model Predictive Control}
+\newacronym{mpc}{MPC}{Model Predictive Controller}
 \newacronym{itrl}{ITRL}{Integrated Transport Research Lab}
 \newacronym{pi}{PI}{Proportional-Integral}
 \newacronym{abs}{ABS}{Anti-lock Braking System}
@@ -94,7 +95,8 @@ I would like to thank...
 
 \glsaddall
 \printglossary
-\printglossary[type=\acronymtype,nonumberlist]
+\renewcommand{\glsnamefont}[1]{\textbf{#1}}
+\printglossary[type=\acronymtype,style=super,nonumberlist,nopostdot,nogroupskip]
 
 
 \clearpage
@@ -124,10 +126,13 @@ The \gls{rcv} at \gls{kth} is a platform for research in vehicle autonomy and ve
 
 
 \section{Research design/Methodology}
-The methodology used for this project will be a case study of how to implement one or more brake controllers, which works best for solving the problem stated together with a comparison of the controllers advantages and disadvantages. The case study will have its focus on qualitative research, as there's extensive work already done withing this area. The testing will also have a qualitative orientation in the end to validate the brake model as well as how the controller performs. 
+The methodology used for this project will be a case study of how to implement one or more brake controllers, which works best for solving the problem stated together with a comparison of the controllers advantages and disadvantages. The case study will have its focus on qualitative research, as there's extensive work already done within this area. The testing will also have a qualitative orientation in the end to validate the brake model as well as how the controller performs. 
 
 \section{Delimitations}
-A lot of aspects affects the behavior of the brakes, and thus not everything can be included in the scope for a thesis. The focus will lie in building an efficient and robust controller for the electrohydraulic brake as well as implementing a basic brake blending algorithm. Hence, aspects like wheel slip, \gls{abs} functions and split mu will not be taken into consideration while designing the brake system. 
+A lot of aspects affects the behavior of the brakes, and to achieve a properly functioning brake with good reaction time will consume much time. Therefore delimitations must be made in order to make the thesis feasible within the limited time frame. The focus of this thesis will be on making an existing braking system faster in terms of reaction time of reaching the requested braking torque. 
+
+Wheel slip and \gls{abs} are both important factors while designing a modern brake, but this will not be implemented or considered in this thesis due to the fact that there is simply not enough time. Split mu, meaning when there is different friction coefficients acting on the the wheels, for example when one wheel travels over a slip of ice or gravel, will not be considered either. The parts that has been left out will be seen as future work that can be made to further improve the brakes on the vehicle. 
+ 
 
 \section{Ethics}
 Brakes is one of the most vital part to the safety of a vehicle. Although this project handles the brakes while in autonomous drive mode, there will still be one or two people in the car monitoring the autonomous driving, whom might be susceptible to great risks if the brakes do not work. To keep the safety of the vehicle at acceptable levels there is a manual brake pedal that overrides the autonomous drive mode, and brakes the vehicle if necessary. This brake pedal is controlled by the person in the drivers seat, who has experience with the vehicle and is much aware of the risks and behavior of the car. 
@@ -153,16 +158,16 @@ Concerning the hardware, the actuators that are mounted on the vehicle is relati
 
 \chapter{Background study}
 This section presents the background study
-\section*{Frame of reference}
+\section{Frame of reference}
 The literature search was done directly in the IEEE Xplore database as well as Google Scholar. The search began with broad definitions as 'braking system autonomous driving' as well as 'braking control methods in autonomous driving', which resulted in a few methods that appeared frequently. These methods where then included in the search, together with searches solely for that method.
 
 
-\subsection*{Hardware setup}
+\subsection{Hardware setup}
 Yu et al. \cite{Yu} discusses differences in a linearly actuated system vs a hydraulic pump system. The linearly actuated system uses a linear actuator that press directly on a hydraulic cylinder, while a hydraulic pump system uses an electric pump to build up pressure and controls the pressure in the system by valves and/or solenoids. The linear actuators are simpler and more fail safe, since it doesn't have as many valves from where there can be a leakage of hydraulic fluid. 
 
 
 \vspace{5mm}
-Line, Manzie and Good \cite{4475522} has constructed a electro-mechanical  brake-by-wire system, which utilizes an electrical motor in the calipers as actuator that controls the pressure of the brake pads. There is also a brake pedal that sense the pedal position which in turn sends the brake request to a controller. They compare two different controllers in this paper, a cascaded \gls{pi} controller and a \gls{mpc}. The cascaded \gls{pi} controller has three control loops for force, motor angular velocity and motor current. The \gls{pi} controller works, but due to the systems nonlinearity it is somewhat inconsistent in different situations. The \gls{mpc} performs better in this case, but in order for it to work this efficiently a very good model of the system is needed as ground work, and this might be time consuming. \newline
+Line, Manzie and Good \cite{4475522} has constructed a electro-mechanical  brake-by-wire system, which utilizes an electrical motor in the calipers as actuator that controls the pressure between the brake pads and the rotor. There is also a brake pedal that sense the pedal position which in turn sends the brake request to a controller. They compare two different controllers in this paper, a cascaded \gls{pi} controller and a \gls{mpc}. The cascaded \gls{pi} controller has three control loops for force, motor angular velocity and motor current. The \gls{pi} controller works, but due to the systems nonlinearity it is somewhat inconsistent in different situations. The \gls{mpc} performs better in this case, but in order for it to work this efficiently a very good model of the system is needed as ground work, and this might be time consuming. \newline
 
 
 Xiang et al. \cite{Xiang} writes that a electro-mechanical system is preferable over a electro-hydraulical system, due to the simplicity, the efficiency and stability, the enhanced diagnostic capabilities, cost reduction, space and weight saving as well as the elimination of environmental concerns associated with traditional hydraulic braking systems.\newline
@@ -180,16 +185,30 @@ Although the actuator in this car is a electric pump compared to a linear actuat
 The brake blending will be done by a simple function where the regenerative brakes brakes as much as possible, and when they have reached their maximum braking power, the friction brakes steps in to fill in the missing torque, as described by Troung \cite{truongdevelopment}. \newline
 
 
-\section*{Results}
+\section{Results/Conclusions from background study}
 The results from the literature study is that the two friction brake controllers will consist of a \gls{pid} controller and a fuzzy logic controller. 
 The brake blending algorithm will be a simple one where the regenerative brakes brake as much as possible, and the friction brakes fills in the missing torque. 
 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
+\chapter{Implementation?}
+
+This chapter could present how the brake is implemented, this in terms of how it is set up in simulink/simscape and how the new mounts was made together with why the decision was made to order new ones.
+
+\section{New actuators}
+
+\section{Hardware for new actuators}
+
+\section{Implementation and tuning in simulink/simscape}
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
 \chapter{Results}
 This chapter presents the results of the thesis.
-\section*{Hardware}
+\section{Hardware}
 The highest needed braking torque on each wheel was calculated with respect to the maximum negative acceleration that is stated in the requirements. If the acceleration is known, as well as the mass of the vehicle the total force that needs to act on the vehicle can be calculated with Newtons second law, 
 \begin{equation}
 F_{tot}=m\cdot a,
