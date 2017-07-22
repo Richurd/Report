@@ -10,15 +10,17 @@
 \BOOKMARK [1][-]{section.2.1}{Frame of reference}{chapter.2}% 10
 \BOOKMARK [2][-]{subsection.2.1.1}{Hardware setup}{section.2.1}% 11
 \BOOKMARK [1][-]{section.2.2}{Results/Conclusions from background study}{chapter.2}% 12
-\BOOKMARK [0][-]{chapter.3}{Implementation?}{}% 13
-\BOOKMARK [1][-]{section.3.1}{New actuators}{chapter.3}% 14
-\BOOKMARK [1][-]{section.3.2}{Hardware for new actuators}{chapter.3}% 15
-\BOOKMARK [1][-]{section.3.3}{Implementation and tuning in simulink/simscape}{chapter.3}% 16
-\BOOKMARK [0][-]{chapter.4}{Results}{}% 17
-\BOOKMARK [1][-]{section.4.1}{Hardware}{chapter.4}% 18
-\BOOKMARK [0][-]{chapter.5}{Conclusion}{}% 19
-\BOOKMARK [0][-]{chapter.6}{Discussion}{}% 20
-\BOOKMARK [0][-]{chapter.7}{Future work}{}% 21
-\BOOKMARK [0][-]{section*.7}{Bibliography}{}% 22
-\BOOKMARK [0][-]{section*.8}{Appendices}{}% 23
-\BOOKMARK [0][-]{appendix.A}{First Appendix}{}% 24
+\BOOKMARK [0][-]{chapter.3}{Implementation}{}% 13
+\BOOKMARK [1][-]{section.3.1}{Original setup?}{chapter.3}% 14
+\BOOKMARK [1][-]{section.3.2}{Brake actuators}{chapter.3}% 15
+\BOOKMARK [2][-]{subsection.3.2.1}{Original actuators and lever arm}{section.3.2}% 16
+\BOOKMARK [2][-]{subsection.3.2.2}{Hardware for new actuators}{section.3.2}% 17
+\BOOKMARK [1][-]{section.3.3}{Implementation and tuning in simulink/simscape}{chapter.3}% 18
+\BOOKMARK [0][-]{chapter.4}{Results}{}% 19
+\BOOKMARK [1][-]{section.4.1}{Hardware}{chapter.4}% 20
+\BOOKMARK [0][-]{chapter.5}{Conclusion}{}% 21
+\BOOKMARK [0][-]{chapter.6}{Discussion}{}% 22
+\BOOKMARK [0][-]{chapter.7}{Future work}{}% 23
+\BOOKMARK [0][-]{section*.5}{Bibliography}{}% 24
+\BOOKMARK [0][-]{section*.6}{Appendices}{}% 25
+\BOOKMARK [0][-]{appendix.A}{First Appendix}{}% 26
