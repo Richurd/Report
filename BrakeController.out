@@ -12,15 +12,17 @@
 \BOOKMARK [1][-]{section.2.2}{Results/Conclusions from background study}{chapter.2}% 12
 \BOOKMARK [0][-]{chapter.3}{Implementation}{}% 13
 \BOOKMARK [1][-]{section.3.1}{Original setup?}{chapter.3}% 14
-\BOOKMARK [1][-]{section.3.2}{Brake actuators}{chapter.3}% 15
+\BOOKMARK [1][-]{section.3.2}{Brake actuators and other hardware}{chapter.3}% 15
 \BOOKMARK [2][-]{subsection.3.2.1}{Original actuators and lever arm}{section.3.2}% 16
-\BOOKMARK [2][-]{subsection.3.2.2}{Hardware for new actuators}{section.3.2}% 17
+\BOOKMARK [2][-]{subsection.3.2.2}{Mounts for new actuators}{section.3.2}% 17
 \BOOKMARK [1][-]{section.3.3}{Implementation and tuning in simulink/simscape}{chapter.3}% 18
-\BOOKMARK [0][-]{chapter.4}{Results}{}% 19
-\BOOKMARK [1][-]{section.4.1}{Hardware}{chapter.4}% 20
-\BOOKMARK [0][-]{chapter.5}{Conclusion}{}% 21
-\BOOKMARK [0][-]{chapter.6}{Discussion}{}% 22
-\BOOKMARK [0][-]{chapter.7}{Future work}{}% 23
-\BOOKMARK [0][-]{section*.5}{Bibliography}{}% 24
-\BOOKMARK [0][-]{section*.6}{Appendices}{}% 25
-\BOOKMARK [0][-]{appendix.A}{First Appendix}{}% 26
+\BOOKMARK [2][-]{subsection.3.3.1}{Modelling in simscape}{section.3.3}% 19
+\BOOKMARK [2][-]{subsection.3.3.2}{Tuning controller}{section.3.3}% 20
+\BOOKMARK [0][-]{chapter.4}{Results}{}% 21
+\BOOKMARK [1][-]{section.4.1}{Hardware}{chapter.4}% 22
+\BOOKMARK [0][-]{chapter.5}{Conclusion}{}% 23
+\BOOKMARK [0][-]{chapter.6}{Discussion}{}% 24
+\BOOKMARK [0][-]{chapter.7}{Future work}{}% 25
+\BOOKMARK [0][-]{section*.5}{Bibliography}{}% 26
+\BOOKMARK [0][-]{section*.6}{Appendices}{}% 27
+\BOOKMARK [0][-]{appendix.A}{First Appendix}{}% 28
