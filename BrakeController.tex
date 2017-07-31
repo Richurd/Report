@@ -200,7 +200,7 @@ The brake blending algorithm will be a simple one where the regenerative brakes 
 
 \chapter{Implementation}
 
-This chapter could present how the brake is implemented, this in terms of how it is set up in simulink/simscape and how the new mounts was made together with why the decision was made to order new ones.
+This chapter could present how the brake is implemented, this in terms of how it is set up in Simulink/Simscape and how the new mounts was made together with why the decision was made to order new ones.
 
 \section{Original setup?}
 The friction braking system that is used in the \gls{rcv} in the beginning of this thesis project is a electro hydraulic brake system. The braking system is made up of two linear actuators which are controlled by current from an [escon??] driver, which in turn get its signal from a ---dSpace controller--- (write more about this), which is the main computer in the \gls{rcv}. The linear actuators acts on hydraulic cylinders that transfers the force to the calipers on each wheel, where the force acts on the rotors which brakes the vehicle. The reason there are two linear actuators is due to the fact that there are two completely separated friction braking systems in the vehicle, one system that acts on the two front wheels, and the other that acts on the two rear wheels. This is done to incorporate a higher level of safety, whereas if one of the system breaks down, there will still be braking abilities on two of the four wheels. \newline
@@ -224,7 +224,7 @@ The hardware setup, in terms of mounts and lever arm, that was originally mounte
 
 A decision was made to change the original actuators to a pair of new ones. The new actuators are of ball screw type, which incorporate lower friction, both static and dynamic. This will help a lot when constructing the controller for the brakes, since we wont have as high step in the current needed to start moving the actuator rod. \\
 
-New mounts had to be made to fit the new actuators, which are slightly larger than the original lead screw actuators. These mounts where modelled in the 3D CAD program Solid Edge, and can be seen in [FIGURE]. These parts where then manufactured by water jet cutting by the machine department at \gls{kth}. The parts that where constructed where new mounts to the actuators, mounts to the hydraulic cylinders as well as a new connection between the actuator and lever arm. The hydraulic cylinders has not been changed during the thesis project, but since the actuator mounts has been made wider as the actuators are wider, the cylinders had to be wider apart as well to get everything to line up properly. \\
+New mounts had to be made to fit the new actuators, which are slightly larger than the original lead screw actuators. These mounts where modeled in the 3D CAD program Solid Edge, and can be seen in [FIGURE]. These parts where then manufactured by water jet cutting by the machine department at \gls{kth}. The parts that where constructed where new mounts to the actuators, mounts to the hydraulic cylinders as well as a new connection between the actuator and lever arm. The hydraulic cylinders has not been changed during the thesis project, but since the actuator mounts has been made wider as the actuators are wider, the cylinders had to be wider apart as well to get everything to line up properly. \\
 
 The connection between the actuator and lever arm was made with regards to the possibility to change the position of the connection on the lever arm, to be able to change the leverage. The connection consists of a T-shaped part that is mounted on the actuator while also clamping on to the lever arm with the help of another piece of metal with holes drilled, two screws and bolts. \\
 
@@ -232,10 +232,10 @@ The connection between the actuator and lever arm was made with regards to the p
 
 \section{Implementation and tuning in simulink/simscape}
 
-The construction of the controller was made with \gls{mbd}, where the model was made using the graphical programming environment Simulink. Primarily the tool box Simscape was used, which is a tool box useful while designing physical systems. The model was then VERIFIED, and used while tuning the brake controller. 
+The development of the controller was made using \gls{mbd}, where the model was made using the graphical programming environment Simulink. Primarily the tool box Simscape was used, which is a tool box useful while designing physical systems. The model was then VERIFIED, and used while tuning the brake controller. 
 
-
-\subsection{Simscape model}
+\subsection{Simscape model (and MBD?)}
+The plant model was constructed in Simulink, mostly using the Simscape toolbox. The plant consists of a few different parts which are the hydraulic system, 
 
 \subsection{Verification of simscape model}
 
