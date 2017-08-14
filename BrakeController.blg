@@ -3,9 +3,14 @@ The style file: ieeetran.bst
 Database file #1: mybib.bib
 Warning--entry type for "truongdevelopment" isn't style-file defined
 --line 102 of file mybib.bib
+You're missing a field name---line 198 of file mybib.bib
+ : 
+ : %doi={10.4271/2010-01-1999},
+(Error may have been on previous line)
+I'm skipping whatever remains of this entry
 -- IEEEtran.bst version 1.14 (2015/08/26) by Michael Shell.
 -- http://www.michaelshell.org/tex/ieeetran/bibtex/
 -- See the "IEEEtran_bst_HOWTO.pdf" manual for usage information.
 
 Done.
-(There was 1 warning)
+(There was 1 error message)
