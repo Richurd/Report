@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.17 (MiKTeX 2.9.6210 64-bit) (preloaded format=pdflatex 2017.4.12)  18 AUG 2017 15:21
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (MiKTeX 2.9.6210 64-bit) (preloaded format=pdflatex 2017.4.12)  24 AUG 2017 17:45
 entering extended mode
 **./BrakeController.tex
 (BrakeController.tex
@@ -1287,37 +1287,37 @@ File: pppdftex.def 2017/01/14 v0.5h Pdfpages driver for pdfTeX (AM)
 \openout6 = `BrakeController.glo'.
 
 Package glossaries Info: Writing glossary file BrakeController.glo on input lin
-e 40.
+e 42.
 \glo@acronym@file=\write7
 \openout7 = `BrakeController.acn'.
 
 Package glossaries Info: Writing glossary file BrakeController.acn on input lin
-e 40.
+e 42.
 
 (BrakeController.aux)
 \openout1 = `BrakeController.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 68.
-LaTeX Font Info:    ... okay on input line 68.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 68.
-LaTeX Font Info:    ... okay on input line 68.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 68.
-LaTeX Font Info:    ... okay on input line 68.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 68.
-LaTeX Font Info:    ... okay on input line 68.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 68.
-LaTeX Font Info:    ... okay on input line 68.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 68.
-LaTeX Font Info:    ... okay on input line 68.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 68.
-LaTeX Font Info:    Try loading font information for TS1+cmr on input line 68.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 70.
+LaTeX Font Info:    ... okay on input line 70.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 70.
+LaTeX Font Info:    ... okay on input line 70.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 70.
+LaTeX Font Info:    ... okay on input line 70.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 70.
+LaTeX Font Info:    ... okay on input line 70.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 70.
+LaTeX Font Info:    ... okay on input line 70.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 70.
+LaTeX Font Info:    ... okay on input line 70.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 70.
+LaTeX Font Info:    Try loading font information for TS1+cmr on input line 70.
  ("C:\Program Files\MiKTeX 2.9\tex\latex\base\ts1cmr.fd"
 File: ts1cmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
 )
-LaTeX Font Info:    ... okay on input line 68.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 68.
-LaTeX Font Info:    ... okay on input line 68.
-LaTeX Font Info:    Try loading font information for OT1+lmr on input line 68.
+LaTeX Font Info:    ... okay on input line 70.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 70.
+LaTeX Font Info:    ... okay on input line 70.
+LaTeX Font Info:    Try loading font information for OT1+lmr on input line 70.
 
 ("C:\Program Files\MiKTeX 2.9\tex\latex\lm\ot1lmr.fd"
 File: ot1lmr.fd 2009/10/30 v1.6 Font defs for Latin Modern
@@ -1349,7 +1349,7 @@ G,.JBIG2,.JB2,.eps]
 (grfext)             \AppendGraphicsExtensions on input line 456.
 )
 \AtBeginShipoutBox=\box52
-Package hyperref Info: Link coloring OFF on input line 68.
+Package hyperref Info: Link coloring OFF on input line 70.
 
 ("C:\Program Files\MiKTeX 2.9\tex\latex\hyperref\nameref.sty"
 Package: nameref 2016/05/21 v2.44 Cross-referencing by name of section
@@ -1361,10 +1361,10 @@ Package: gettitlestring 2016/05/16 v1.5 Cleanup title references (HO)
 )
 Redoing nameref's sectioning
 Redoing nameref's label
-LaTeX Info: Redefining \nameref on input line 68.
-LaTeX Info: Redefining \ref on input line 68.
-LaTeX Info: Redefining \pageref on input line 68.
-LaTeX Info: Redefining \nameref on input line 68.
+LaTeX Info: Redefining \nameref on input line 70.
+LaTeX Info: Redefining \ref on input line 70.
+LaTeX Info: Redefining \pageref on input line 70.
+LaTeX Info: Redefining \nameref on input line 70.
 (BrakeController.out) (BrakeController.out)
 \@outlinefile=\write8
 \openout8 = `BrakeController.out'.
@@ -1381,7 +1381,7 @@ Package: lscape 2000/10/22 v3.01 Landscape Pages (DPC)
 )
 Package pdflscape Info: Auto-detected driver: pdftex on input line 81.
 )
-LaTeX Font Info:    Try loading font information for OT1+lmss on input line 74.
+LaTeX Font Info:    Try loading font information for OT1+lmss on input line 76.
 
 
 ("C:\Program Files\MiKTeX 2.9\tex\latex\lm\ot1lmss.fd"
@@ -1395,14 +1395,14 @@ Package epstopdf Info: Source file: <kth_svv.eps>
 (epstopdf)                    size: 23800 bytes
 (epstopdf)             Command: <epstopdf --outfile=kth_svv-eps-converted-to.pd
 f kth_svv.eps>
-(epstopdf)             \includegraphics on input line 74.
+(epstopdf)             \includegraphics on input line 76.
 Package epstopdf Info: Output file is already uptodate.
 
 <kth_svv-eps-converted-to.pdf, id=122, 370.38374pt x 370.38374pt>
 File: kth_svv-eps-converted-to.pdf Graphic file (type pdf)
 
 <use kth_svv-eps-converted-to.pdf>
-Package pdftex.def Info: kth_svv-eps-converted-to.pdf used on input line 74.
+Package pdftex.def Info: kth_svv-eps-converted-to.pdf used on input line 76.
 (pdftex.def)             Requested size: 370.38283pt x 370.38283pt.
  [1
 
@@ -1413,40 +1413,40 @@ Package pdftex.def Info: kth_svv-eps-converted-to.pdf used on input line 74.
 o.pdf>] [2
 
 ]
-LaTeX Font Info:    Try loading font information for T1+lmss on input line 78.
+LaTeX Font Info:    Try loading font information for T1+lmss on input line 80.
 
 ("C:\Program Files\MiKTeX 2.9\tex\latex\lm\t1lmss.fd"
 File: t1lmss.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
-LaTeX Font Info:    Try loading font information for OML+lmm on input line 78.
+LaTeX Font Info:    Try loading font information for OML+lmm on input line 80.
 
 ("C:\Program Files\MiKTeX 2.9\tex\latex\lm\omllmm.fd"
 File: omllmm.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
-LaTeX Font Info:    Try loading font information for OMS+lmsy on input line 78.
+LaTeX Font Info:    Try loading font information for OMS+lmsy on input line 80.
 
 
 ("C:\Program Files\MiKTeX 2.9\tex\latex\lm\omslmsy.fd"
 File: omslmsy.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
-LaTeX Font Info:    Try loading font information for OMX+lmex on input line 78.
+LaTeX Font Info:    Try loading font information for OMX+lmex on input line 80.
 
 
 ("C:\Program Files\MiKTeX 2.9\tex\latex\lm\omxlmex.fd"
 File: omxlmex.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <10.95> on input line 78.
+(Font)              <10.95> on input line 80.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <8> on input line 78.
+(Font)              <8> on input line 80.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <6> on input line 78.
-LaTeX Font Info:    Try loading font information for U+msa on input line 78.
+(Font)              <6> on input line 80.
+LaTeX Font Info:    Try loading font information for U+msa on input line 80.
 
 ("C:\Program Files\MiKTeX 2.9\tex\latex\amsfonts\umsa.fd"
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Try loading font information for U+msb on input line 78.
+LaTeX Font Info:    Try loading font information for U+msb on input line 80.
 
 ("C:\Program Files\MiKTeX 2.9\tex\latex\amsfonts\umsb.fd"
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
@@ -1454,16 +1454,16 @@ File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 
 ]
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <10> on input line 84.
+(Font)              <10> on input line 86.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <7> on input line 84.
+(Font)              <7> on input line 86.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <5> on input line 84.
+(Font)              <5> on input line 86.
 pdfTeX warning (ext4): destination with the same identifier (name{page.}) has b
 een already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.89 \clearpage
+l.91 \clearpage
                 [4
 
 ] (BrakeController.gls) (BrakeController.acrpdfTeX warning (ext4): destination 
@@ -1486,7 +1486,7 @@ l.1 ...ysection[\glossarytoctitle]{\glossarytitle}
  been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.103 \clearpage
+l.105 \clearpage
                  [7
 
 ] (BrakeController.tocpdfTeX warning (ext4): destination with the same identifi
@@ -1501,76 +1501,76 @@ l.34 ...berline {A}First Appendix}{23}{appendix.A}
  been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.106 \clearpage
+l.108 \clearpage
                  [9] (BrakeController.lof)pdfTeX warning (ext4): destination wi
 th the same identifier (name{page.}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.108 \clearpage
+l.110 \clearpage
                  [10
 
 ] (BrakeController.lot)pdfTeX warning (ext4): destination with the same identif
 ier (name{page.}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.115 \pagestyle
+l.117 \pagestyle
                 {newchap} [11
 
 ]pdfTeX warning (ext4): destination with the same identifier (name{page.}) has 
 been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.115 \pagestyle
+l.117 \pagestyle
                 {newchap} [12
 
 ] [1
 
 ]
-Underfull \hbox (badness 10000) in paragraph at lines 146--147
+Underfull \hbox (badness 10000) in paragraph at lines 148--149
 
  []
 
 [2] [3] [4
 
 ]
-Underfull \hbox (badness 10000) in paragraph at lines 176--177
+Underfull \hbox (badness 10000) in paragraph at lines 178--179
 
  []
 
 [5]
-Underfull \hbox (badness 10000) in paragraph at lines 179--180
+Underfull \hbox (badness 10000) in paragraph at lines 181--182
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 182--183
+Underfull \hbox (badness 10000) in paragraph at lines 184--185
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 186--187
+Underfull \hbox (badness 10000) in paragraph at lines 188--189
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 188--190
+Underfull \hbox (badness 10000) in paragraph at lines 190--192
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 191--192
+Underfull \hbox (badness 10000) in paragraph at lines 193--194
 
  []
 
 [6] [7] [8
 
 ]
-Underfull \hbox (badness 10000) in paragraph at lines 206--207
+Underfull \hbox (badness 10000) in paragraph at lines 208--209
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 208--209
+Underfull \hbox (badness 10000) in paragraph at lines 210--211
 
  []
 
@@ -1578,17 +1578,17 @@ Underfull \hbox (badness 10000) in paragraph at lines 208--209
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [9]
-Underfull \hbox (badness 10000) in paragraph at lines 216--217
-
- []
-
-
 Underfull \hbox (badness 10000) in paragraph at lines 218--219
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 225--226
+Underfull \hbox (badness 10000) in paragraph at lines 220--221
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 227--228
 
  []
 
@@ -1596,16 +1596,40 @@ Underfull \hbox (badness 10000) in paragraph at lines 225--226
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [10]
-Underfull \hbox (badness 10000) in paragraph at lines 227--228
-
- []
-
-
 Underfull \hbox (badness 10000) in paragraph at lines 229--230
 
  []
 
-[11] [12] [13
+
+Underfull \hbox (badness 10000) in paragraph at lines 231--232
+
+ []
+
+<images/Actuator_mount.png, id=272, 416.15475pt x 359.54324pt>
+File: images/Actuator_mount.png Graphic file (type png)
+
+<use images/Actuator_mount.png>
+Package pdftex.def Info: images/Actuator_mount.png used on input line 235.
+(pdftex.def)             Requested size: 198.0pt x 171.07008pt.
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [11 <./images/Actuator_mount.png>]
+Underfull \hbox (badness 10000) in paragraph at lines 255--256
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 257--258
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 259--260
+
+ []
+
+[12] [13
 
 ] [14
 
@@ -1629,36 +1653,38 @@ bibitemlist
 \tf@lot=\write11
 \openout11 = `BrakeController.lot'.
 
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 293.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 293.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 307.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 307.
  (BrakeController.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 293.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 293.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 307.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 307.
 Package rerunfilecheck Info: File `BrakeController.out' has not changed.
 (rerunfilecheck)             Checksum: ED3FBA13682C584D8908841176F70162;1831.
  ) 
 Here is how much of TeX's memory you used:
- 27878 strings out of 493329
- 469593 string characters out of 3139057
- 2604302 words of memory out of 3000000
- 30789 multiletter control sequences out of 15000+200000
- 71592 words of font info for 62 fonts, out of 3000000 for 9000
+ 27897 strings out of 493329
+ 469895 string characters out of 3139057
+ 2604315 words of memory out of 3000000
+ 30803 multiletter control sequences out of 15000+200000
+ 77483 words of font info for 64 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
  1003i,12n,1003p,1947b,497s stack positions out of 5000i,500n,10000p,200000b,50000s
 {C:/Program Files/MiKTeX 2.9/fonts/enc/dvips/lm/lm-rm.enc}{C:/Program Files/M
 iKTeX 2.9/fonts/enc/dvips/lm/lm-mathsy.enc}{C:/Program Files/MiKTeX 2.9/fonts/e
 nc/dvips/lm/lm-mathit.enc}{C:/Program Files/MiKTeX 2.9/fonts/enc/dvips/lm/lm-ec
 .enc}<C:/Program Files/MiKTeX 2.9/fonts/type1/public/lm/lmbx10.pfb><C:/Program 
-Files/MiKTeX 2.9/fonts/type1/public/lm/lmmi10.pfb><C:/Program Files/MiKTeX 2.9/
-fonts/type1/public/lm/lmmi8.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public
-/lm/lmr10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/lm/lmri10.pfb><C:
-/Program Files/MiKTeX 2.9/fonts/type1/public/lm/lmss10.pfb><C:/Program Files/Mi
-KTeX 2.9/fonts/type1/public/lm/lmss12.pfb><C:/Program Files/MiKTeX 2.9/fonts/ty
-pe1/public/lm/lmssbx10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/lm/l
-mssdc10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/lm/lmsy10.pfb>
-Output written on BrakeController.pdf (35 pages, 275064 bytes).
+Files/MiKTeX 2.9/fonts/type1/public/lm/lmbx9.pfb><C:/Program Files/MiKTeX 2.9/f
+onts/type1/public/lm/lmmi10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public
+/lm/lmmi8.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/lm/lmr10.pfb><C:/
+Program Files/MiKTeX 2.9/fonts/type1/public/lm/lmr9.pfb><C:/Program Files/MiKTe
+X 2.9/fonts/type1/public/lm/lmri10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1
+/public/lm/lmss10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/lm/lmss12
+.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/lm/lmssbx10.pfb><C:/Progra
+m Files/MiKTeX 2.9/fonts/type1/public/lm/lmssdc10.pfb><C:/Program Files/MiKTeX 
+2.9/fonts/type1/public/lm/lmsy10.pfb>
+Output written on BrakeController.pdf (35 pages, 346000 bytes).
 PDF statistics:
- 391 PDF objects out of 1000 (max. 8388607)
- 74 named destinations out of 1000 (max. 500000)
- 250 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 403 PDF objects out of 1000 (max. 8388607)
+ 75 named destinations out of 1000 (max. 500000)
+ 255 words of extra memory for PDF output out of 10000 (max. 10000000)
 

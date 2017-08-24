@@ -20,8 +20,8 @@
 \contentsline {section}{\numberline {3.2}Brake actuators and other hardware}{10}{section.3.2}
 \contentsline {subsection}{\numberline {3.2.1}Original actuators and lever arm}{10}{subsection.3.2.1}
 \contentsline {subsection}{\numberline {3.2.2}Mounts for new actuators}{11}{subsection.3.2.2}
-\contentsline {section}{\numberline {3.3}Implementation and tuning in simulink/simscape}{11}{section.3.3}
-\contentsline {subsection}{\numberline {3.3.1}Simscape model (and MBD?)}{11}{subsection.3.3.1}
+\contentsline {section}{\numberline {3.3}Implementation and tuning in simulink/simscape}{12}{section.3.3}
+\contentsline {subsection}{\numberline {3.3.1}Simscape model (and MBD?)}{12}{subsection.3.3.1}
 \contentsline {subsection}{\numberline {3.3.2}Verification of simscape model}{12}{subsection.3.3.2}
 \contentsline {subsection}{\numberline {3.3.3}Tuning controller}{12}{subsection.3.3.3}
 \contentsline {chapter}{\chapternumberline {4}Results}{13}{chapter.4}

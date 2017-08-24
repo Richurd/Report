@@ -23,6 +23,8 @@
 \usepackage{pdfpages}
 \usepackage{longtable}
 \usepackage[acronym]{glossaries}
+\usepackage{graphicx} %To use pictures
+\graphicspath{ {images/} }
 
 
 
@@ -34,7 +36,7 @@
 %\usepackage{fullpage} % changes the margin
 %\usepackage[utf8]{inputenc}
 %\usepackage[T1]{fontenc}
-%\usepackage{graphicx} %To use pictures
+
 
 
 \makeglossaries
@@ -224,11 +226,18 @@ The hardware setup, in terms of mounts and lever arm, that was originally mounte
 
 A decision was made to change the original actuators to a pair of new ones. The new actuators are of ball screw type, which incorporate lower friction, both static and dynamic. This will help a lot when constructing the controller for the brakes, since we wont have as high step in the current needed to start moving the actuator rod. \\
 
-New mounts had to be made to fit the new actuators, which are slightly larger than the original lead screw actuators. These mounts where modeled in the 3D CAD program Solid Edge, and can be seen in [FIGURE]. These parts where then manufactured by water jet cutting by the machine department at \gls{kth}. The parts that where constructed where new mounts to the actuators, mounts to the hydraulic cylinders as well as a new connection between the actuator and lever arm. The hydraulic cylinders has not been changed during the thesis project, but since the actuator mounts has been made wider as the actuators are wider, the cylinders had to be wider apart as well to get everything to line up properly. \\
+New mounts had to be made to fit the new actuators, which are slightly larger than the original lead screw actuators. These mounts where modeled in the 3D CAD program Solid Edge, and can be seen in \ref{fig:CAD_Actuator_mount} [AND MORE]. These parts where then manufactured by water jet cutting by the machine department at \gls{kth}. The parts that where constructed where new mounts to the actuators, mounts to the hydraulic cylinders as well as a new connection between the actuator and lever arm. The hydraulic cylinders has not been changed during the thesis project, but since the actuator mounts has been made wider as the actuators are wider, the cylinders had to be wider apart as well to get everything to line up properly. \\
 
 The connection between the actuator and lever arm was made with regards to the possibility to change the position of the connection on the lever arm, to be able to change the leverage. The connection consists of a T-shaped part that is mounted on the actuator while also clamping on to the lever arm with the help of another piece of metal with holes drilled, two screws and bolts. \\
 
-[CAD picture of mounts]
+\begin{figure}[h]
+\centering
+\includegraphics[width=0.5\textwidth]{Actuator_mount}
+\caption{CAD picture of mount}
+\label{fig:CAD_Actuator_mount}
+\end{figure}
+
+
 
 \section{Implementation and tuning in simulink/simscape}
 
@@ -237,12 +246,17 @@ The development of the controller was made using \gls{mbd}, where the model was 
 \subsection{Simscape model (and MBD?)}
 The plant model was constructed in Simulink, mostly using the Simscape toolbox. The plant is made up of a few different parts which are the hydraulic system, the brake calipers, electric actuators and mechanical force translation such as lever arm. All of these parts are made up of Simscape blocks that are tuned by measured or calculated values  as well as values derived from data sheets. The choice of using \gls{mbd} was due to the fact that it is an easy and fast. 
 
-This way of solving a problem by making a software plant model and designing the controller from there is called \gls{mbd}, which has become a very popular method of solving engineering problems, since when a plantmodel has been made it is easy, fast and cheap to develop and improve the controls\cite{2010-01-1999}. 
+This way of solving a problem by making a software plant model and designing the controller from there is called \gls{mbd}, which has become a very popular method of solving engineering problems, since when a plant model has been made it is easy, fast and cheap to develop and improve the controls\cite{2010-01-1999}. 
 
 \subsection{Verification of simscape model}
+When the simscape model was done the plant need to be verified before the of the controlled is done. The verification was made by running the physical system with the new actuators and all necessary hard ware mounted at certain current requests and the compare the results with from the same cases of current request on the plant model. The results can be seen in [FIGURE]. 
 
 \subsection{Tuning controller}
+The \gls{pid} controlled was tuned using pole placement design. \\
 
+A feed forward was also incorporated\\
+
+Something about anti windup\\
 
 %%%%%%%%%%%%%   RESULTS   %%%%%%%%%%%%%%%%%%%%
 
