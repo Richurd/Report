@@ -217,7 +217,7 @@ At the start of the thesis project the idea was to use the original hardware set
 \subsection{Original actuators and lever arm}
 The original actuators was of an acme screw type, which involves a lot of friction where up to 80\% of the input power can be dissipated in friction losses [SOURCE]. This means that the motor within the actuator has to work hard to move the rod in each direction. The static friction is also very high, which raises a problem when it come to the control of the actuator. The actuator requires a high current to start moving to overcome the static friction, and when it has overcome that static friction the need of current to keep the motion going is not as high. Thus, the steps in current that is needed to make the actuator move offers a problem in controlling it, since it is hard to control with the step in current that is needed and very small movements in the actuator rod can have large effects to the pressure of the hydraulic system. \\
 
-Although, one feature that could be useful in the acme leadscrew actuators is that the configuration is, within certain forces, selflocking. They function in such a way that it moves easily if force is applied from one direction , while if it is applied in the other direction it has to be very high in order for the piston to move. Thus, they can be used as parking brake when the vehicle is turned of, if no other means of parking brake is present. Since the ballscrew actuator has lower internal friction, it cannot be relied upon as parking brake. Though, a parking brake can easily be realized by other means, such as a lever  connected to the manual parking brake etc., and is therefore not included in the scope of this thesis\\
+Although, one feature that could be useful in the acme leadscrew actuators is that the configuration is, within certain forces, self locking. They function in such a way that it moves easily if force is applied from one direction , while if it is applied in the other direction it has to be very high in order for the piston to move. Thus, they can be used as parking brake when the vehicle is turned of, if no other means of parking brake is present. Since the ballscrew actuator has lower internal friction, it cannot be relied upon as parking brake. Though, a parking brake can easily be realized by other means, such as a lever  connected to the manual parking brake etc., and is therefore not included in the scope of this thesis\\
 
 The hardware setup, in terms of mounts and lever arm, that was originally mounted on the \gls{rcv} needed revision as well, especially the lever arms that transferred the force from the actuator to the hydraulic cylinder. As can be seen in picture [SOURCE TO PICTURE], there is a lever arm that transfers the force from actuator to hydraulic cylinder. This arm is over dimensioned, the lever arm is to long. Tests showed that the acme screw actuators reaches their stroke limit when the request for braking torque reaches a certain point, which means that the actuators is able to provide higher force than  originally is possible, hence, the lever arms can be shortened in order to make the system faster while keeping the amount of force that can be delivered. 
 
@@ -235,6 +235,13 @@ The connection between the actuator and lever arm was made with regards to the p
 \includegraphics[width=0.5\textwidth]{Actuator_mount}
 \caption{CAD picture of mount}
 \label{fig:CAD_Actuator_mount}
+\end{figure}
+
+\begin{figure}[h]
+\centering
+\includegraphics[width=0.5\textwidth]{Hydraulic_cylinder_mount}
+\caption{CAD picture of the hydraulic cylinder mount}
+\label{fig:CAD_Hydraulic_cylinder_mount}
 \end{figure}
 
 
