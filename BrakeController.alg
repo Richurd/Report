@@ -1,4 +1,4 @@
-This is makeindex, version 2.15 [MiKTeX 2.9.6100 64-bit] (kpathsea + Thai support).
+This is makeindex, version 2.15 [MiKTeX 2.9.6350 64-bit] (kpathsea + Thai support).
 Scanning style file ./BrakeController.ist.............................done (29 attributes redefined, 0 ignored).
 Scanning input file BrakeController.acn...
 !! Input index error (file = BrakeController.acn, line = 1):
@@ -33,8 +33,12 @@ Scanning input file BrakeController.acn...
    -- Illegal page number .
 !! Input index error (file = BrakeController.acn, line = 16):
    -- Illegal page number .
-.done (31 entries accepted, 16 rejected).
-Sorting entries....done (174 comparisons).
-Generating output file BrakeController.acr....done (41 lines written, 0 warnings).
+!! Input index error (file = BrakeController.acn, line = 17):
+   -- Illegal page number .
+!! Input index error (file = BrakeController.acn, line = 18):
+   -- Illegal page number .
+.done (34 entries accepted, 18 rejected).
+Sorting entries....done (172 comparisons).
+Generating output file BrakeController.acr....done (39 lines written, 0 warnings).
 Output written in BrakeController.acr.
 Transcript written in BrakeController.alg.
