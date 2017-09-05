@@ -22,8 +22,9 @@
 \usepackage{array}
 \usepackage{pdfpages}
 \usepackage{longtable}
-\usepackage[acronym]{glossaries}
+\usepackage[acronym]{glossaries} 
 \usepackage{graphicx} %To use pictures
+\usepackage[T1]{fontenc} %Includes '>'
 \graphicspath{ {images/} }
 
 
@@ -127,15 +128,29 @@ This chapter will give an introduction to the thesis.
  
 The \gls{rcv} at \gls{kth} is a platform for research in vehicle autonomy and vehicle dynamics. For precise autonomous operation, accurate actuation of steering input and wheel torque is critical. The electrical wheel motors of the \gls{rcv} can produce torque for acceleration and braking up to a limit. However, for hard braking maneuvers, regenerative braking is not sufficient and a hydraulic brake system actuated by electric linear actuators is used in addition. In the current configuration, the hydraulic brakes actuate fairly slow (>1s before braking request is met). Thus, a redesign of the control software and the mechanical assembly is needed. The task is challenging due to the non-linear and environment dependent dynamics of the hydraulic system.
 
+\section{Purpose}
+The purpose of this thesis is to evaluate and improve the performance of the friction brake system on the \gls{rcv}. 
 
-\section{Research design/Methodology}
-The methodology used for this project will be a case study of how to implement one or more brake controllers, which works best for solving the problem stated together with a comparison of the controllers advantages and disadvantages. The case study will have its focus on qualitative research, as there's extensive work already done within this area. The testing will also have a qualitative orientation in the end to validate the brake model as well as how the controller performs. 
+To fulfill the purpose a couple of research questions was set up. These are as follows: 
+\begin{itemize}
+%Original question: \item To what extent can braking performance in terms of actuation speed be improved with the new control method?
+\item Which are the most common methods used in friction brake controllers in brake-by-wire systems and autonomous vehicles? %Change this to which of the two control methods works best?
+%Göra om till jämföra två vanliga
+%\item To what extent can the error in how the torque request are met be lowered with new control methods?
+%Subquestions?
+\item With two of the most common controllers, how does the control methods together with brake blending enhance how the torque request are met, compared to each other as well as  before?
+\item Can the controllers achieve an error of a maximum of 5\% of the requested torque at all times?
+%brake blending med torque fill ist
+\end{itemize}
 
 \section{Delimitations}
 A lot of aspects affects the behavior of the brakes, and to achieve a properly functioning brake with good reaction time will consume much time. Therefore delimitations must be made in order to make the thesis feasible within the limited time frame. The focus of this thesis will be on making an existing braking system faster in terms of reaction time of reaching the requested braking torque. 
 
 Wheel slip and \gls{abs} are both important factors while designing a modern brake, but this will not be implemented or considered in this thesis due to the fact that there is simply not enough time. Split mu, meaning when there is different friction coefficients acting on the the wheels, for example when one wheel travels over a slip of ice or gravel, will not be considered either. The parts that has been left out will be seen as future work that can be made to further improve the brakes on the vehicle. 
  
+\section{Research design/Methodology}
+The methodology used for this project will be a case study of how to implement one or more brake controllers, which works best for solving the problem stated together with a comparison of the controllers advantages and disadvantages. The case study will have its focus on qualitative research, as there's extensive work already done within this area. The testing will also have a qualitative orientation in the end to validate the brake model as well as how the controller performs. 
+
 
 \section{Ethics}
 Brakes is one of the most vital part to the safety of a vehicle. Although this project handles the brakes while in autonomous drive mode, there will still be one or two people in the car monitoring the autonomous driving, whom might be susceptible to great risks if the brakes do not work. To keep the safety of the vehicle at acceptable levels there is a manual brake pedal that overrides the autonomous drive mode, and brakes the vehicle if necessary. This brake pedal is controlled by the person in the drivers seat, who has experience with the vehicle and is much aware of the risks and behavior of the car. 
@@ -171,7 +186,7 @@ This section presents the background study that was conducted in the early parts
 \section{Frame of reference}
 The literature search began with searches in the IEEE Xplore database, but ended up using Google Scholar as the main search engine for articles, papers and reports that was of value to this thesis. The search began with broad definitions such as 'braking system autonomous driving' as well as 'braking control methods in autonomous driving' trying to get reports that included everything in the braking system, such as the hardware as well as software and controllers. As stated before the main idea in the beginning was to just make a new controller to the brakes on the \gls{rcv}, but this was broadened to also include the implementation of new hardware. This resulted in that the background study had to be oriented towards hardware as well. 
 
-This resulted in a few methods of controlling a brake actuator or braking system that appeared frequently. These methods where then included in the search, together with searches solely for that method. This way each search only resulted in a few certain articles or papers where most of them where relevant or at least semi-relevant to this thesis project. These articles and their contents are discussed in the following sections withing this chapter.
+The literature searches showed that there where a few methods of controlling a brake actuator or braking system that appeared more frequently than other. These methods where then included in the search, together with searches solely for that method. This way each search only resulted in a few certain articles or papers where most of them where relevant or at least semi-relevant to this thesis project. These articles and their contents are discussed in the following sections withing this chapter.
 
 
 \subsection{Hardware setup}
@@ -224,6 +239,8 @@ The original actuators was of an acme screw type, which involves a lot of fricti
 However, one feature that could be useful in the acme leadscrew actuators is that the configuration is, within certain forces, self locking. They function in such a way that it moves easily if force is applied from one direction , while if it is applied in the other direction it has to be very high in order for the piston to move. Thus, they can be used as parking brake when the vehicle is turned of, if no other means of parking brake is present. Since the ballscrew actuator has lower internal friction, it cannot be relied upon as parking brake. Though, a parking brake can easily be realized by other means, such as a lever  connected to the manual parking brake etc., and is therefore not included in the scope of this thesis\\
 
 The hardware setup, in terms of mounts and lever arm, that was originally mounted on the \gls{rcv} needed revision as well, especially the lever arms that transferred the force from the actuator to the hydraulic cylinder. As can be seen in picture [SOURCE TO PICTURE], there is a lever arm that transfers the force from actuator to hydraulic cylinder. This arm is over dimensioned, the lever arm is to long. Tests showed that the acme screw actuators reaches their stroke limit when the request for braking torque reaches a certain point, which means that the actuators is able to provide higher force than  originally is possible, hence, the lever arms can be shortened in order to make the system faster while keeping the amount of force that can be delivered. 
+
+\subsection{New actuators}
 
 
 \subsection{Mounts for new actuators}
@@ -287,7 +304,9 @@ where $F_{wheel}$ is the force needed on each wheel. The torque needed on that w
 \begin{equation}
 M=F_{wheel}\cdot r,
 \end{equation}
-where $M$ is the torque and $r$ is the radius of the wheel. The required torque on each wheel was calculated to 350 Nm.
+where $M$ is the torque and $r$ is the radius of the wheel. The required torque on each wheel was calculated to 350 Nm.\\
+
+Beskriva hur Pressure--->Torque gått till under mätning? 
 
 
 
