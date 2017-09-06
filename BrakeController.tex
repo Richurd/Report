@@ -129,18 +129,13 @@ This chapter will give an introduction to the thesis.
 The \gls{rcv} at \gls{kth} is a platform for research in vehicle autonomy and vehicle dynamics. For precise autonomous operation, accurate actuation of steering input and wheel torque is critical. The electrical wheel motors of the \gls{rcv} can produce torque for acceleration and braking up to a limit. However, for hard braking maneuvers, regenerative braking is not sufficient and a hydraulic brake system actuated by electric linear actuators is used in addition. In the current configuration, the hydraulic brakes actuate fairly slow (>1s before braking request is met). Thus, a redesign of the control software and the mechanical assembly is needed. The task is challenging due to the non-linear and environment dependent dynamics of the hydraulic system.
 
 \section{Purpose}
-The purpose of this thesis is to evaluate and improve the performance of the friction brake system on the \gls{rcv}. 
+The vehicle industry as well as industry in general is moving towards automation to lower costs, risks, lead times and work load for employees. Today there already exists some form of autonomous driving in vehicles, such as Tesla's Auto pilot and Volvo which are conducting tests with autonomous high way driving around Gothenburg. For the technology to be accepted by the masses it need to be safe and not put people, animals or other things at risk. Since the \gls{rcv} is built for autonomous driving, but lacks an efficient friction brake, the purpose of this thesis will be to evaluate and improve the performance of the friction brake system. The updated braking system on the \gls{rcv} will be discussed how they can be applied in general autonomous vehicles, 
 
 To fulfill the purpose a couple of research questions was set up. These are as follows: 
 \begin{itemize}
-%Original question: \item To what extent can braking performance in terms of actuation speed be improved with the new control method?
-\item Which are the most common methods used in friction brake controllers in brake-by-wire systems and autonomous vehicles? %Change this to which of the two control methods works best?
-%Göra om till jämföra två vanliga
-%\item To what extent can the error in how the torque request are met be lowered with new control methods?
-%Subquestions?
-\item With two of the most common controllers, how does the control methods together with brake blending enhance how the torque request are met, compared to each other as well as  before?
+\item Which are the most common methods used in friction brake controllers in brake-by-wire systems and autonomous vehicles? 
+\item How does the chosen control method enhance how the torque request are met, compared to the original hardware setup and controller?
 \item Can the controllers achieve an error of a maximum of 5\% of the requested torque at all times?
-%brake blending med torque fill ist
 \end{itemize}
 
 \section{Delimitations}
@@ -224,7 +219,7 @@ The brake blending algorithm will be a simple one where the regenerative brakes 
 This chapter could present how the brake is implemented, this in terms of how it is set up in Simulink/Simscape and how the new mounts was made together with why the decision was made to order new ones.
 
 \section{Original setup?}
-The friction braking system that is used in the \gls{rcv} in the beginning of this thesis project is a electro hydraulic brake system. The braking system is made up of two linear actuators which are controlled by current from an [escon??] driver, which in turn get its signal from a ---dSpace controller--- (write more about this), which is the main computer in the \gls{rcv}. The linear actuators acts on hydraulic cylinders that transfers the force to the calipers on each wheel, where the force acts on the rotors which brakes the vehicle. The reason there are two linear actuators is due to the fact that there are two completely separated friction braking systems in the vehicle, one system that acts on the two front wheels, and the other that acts on the two rear wheels. This is done to incorporate a higher level of safety, whereas if one of the system breaks down, there will still be braking abilities on two of the four wheels. \newline
+The friction braking system that is used in the \gls{rcv} in the beginning of this thesis project is a electro hydraulic brake system. The braking system is made up of two linear actuators which are controlled by current from an [escon??] driver, which in turn get its signal from a ---dSpace controller--- (write more about this), which is the main computer in the \gls{rcv}. The linear actuators acts on hydraulic cylinders that transfers the force to the calipers on each wheel, where the force acts on the rotors which brakes the vehicle. The reason there are two linear actuators is due to the fact that there are two completely separated friction braking systems in the vehicle, one system that acts on the two front wheels, and the other that acts on the two rear wheels. This is done to incorporate a higher level of safety, whereas if one of the systems breaks down, there will still be braking abilities on two of the four wheels. \newline
 
 There is also a manually operated braking pedal that acts on the hydraulic system, controlling the brakes on all four wheels. This braking pedal which is mechanically connected directly to two hydraulic cylinders is located between the calipers and the hydraulic cylinders connected to the linear actuators. If the manual brake pedal is pressed, the autonomous braking system is mechanically disconnected, and all braking is controlled by the driver. \newline
 

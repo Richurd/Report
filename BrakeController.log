@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.17 (MiKTeX 2.9.6210 64-bit) (preloaded format=pdflatex 2017.4.12)  5 SEP 2017 16:39
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (MiKTeX 2.9.6210 64-bit) (preloaded format=pdflatex 2017.4.12)  6 SEP 2017 17:41
 entering extended mode
 **./BrakeController.tex
 (BrakeController.tex
@@ -1403,7 +1403,7 @@ f kth_svv.eps>
 (epstopdf)             \includegraphics on input line 77.
 Package epstopdf Info: Output file is already uptodate.
 
-<kth_svv-eps-converted-to.pdf, id=126, 370.38374pt x 370.38374pt>
+<kth_svv-eps-converted-to.pdf, id=130, 370.38374pt x 370.38374pt>
 File: kth_svv-eps-converted-to.pdf Graphic file (type pdf)
 
 <use kth_svv-eps-converted-to.pdf>
@@ -1498,7 +1498,7 @@ l.106 \clearpage
 er (name{page.}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.34 ...line {chapter}{Appendices}{24}{section*.6}
+l.35 ...line {chapter}{Appendices}{24}{section*.6}
                                                    [8
 
 
@@ -1529,49 +1529,49 @@ l.118 \pagestyle
                 {newchap} [12
 
 ]
-LaTeX Font Info:    Try loading font information for TS1+lmr on input line 137.
+LaTeX Font Info:    Try loading font information for TS1+lmr on input line 136.
 
 
 ("C:\Program Files\MiKTeX 2.9\tex\latex\lm\ts1lmr.fd"
 File: ts1lmr.fd 2009/10/30 v1.6 Font defs for Latin Modern
-) [1
+)
+Underfull \vbox (badness 1845) has occurred while \output is active []
+
+ [1
 
 ]
-Underfull \hbox (badness 10000) in paragraph at lines 163--164
+[2]
+Underfull \hbox (badness 10000) in paragraph at lines 158--159
 
  []
 
-
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [2]
 [3] [4
 
 ]
 Underfull \vbox (badness 1043) has occurred while \output is active []
 
  [5]
-Underfull \hbox (badness 10000) in paragraph at lines 197--198
+Underfull \hbox (badness 10000) in paragraph at lines 192--193
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 200--201
+Underfull \hbox (badness 10000) in paragraph at lines 195--196
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 203--204
+Underfull \hbox (badness 10000) in paragraph at lines 198--199
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 207--208
+Underfull \hbox (badness 10000) in paragraph at lines 202--203
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 209--211
+Underfull \hbox (badness 10000) in paragraph at lines 204--206
 
  []
 
@@ -1579,19 +1579,19 @@ Underfull \hbox (badness 10000) in paragraph at lines 209--211
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [6]
-Underfull \hbox (badness 10000) in paragraph at lines 212--213
+Underfull \hbox (badness 10000) in paragraph at lines 207--208
 
  []
 
 [7] [8
 
 ]
-Underfull \hbox (badness 10000) in paragraph at lines 227--228
+Underfull \hbox (badness 10000) in paragraph at lines 222--223
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 229--230
+Underfull \hbox (badness 10000) in paragraph at lines 224--225
 
  []
 
@@ -1599,17 +1599,17 @@ Underfull \hbox (badness 10000) in paragraph at lines 229--230
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [9]
-Underfull \hbox (badness 10000) in paragraph at lines 237--238
+Underfull \hbox (badness 10000) in paragraph at lines 232--233
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 239--240
+Underfull \hbox (badness 10000) in paragraph at lines 234--235
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 248--249
+Underfull \hbox (badness 10000) in paragraph at lines 243--244
 
  []
 
@@ -1617,28 +1617,28 @@ Underfull \hbox (badness 10000) in paragraph at lines 248--249
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [10]
-Underfull \hbox (badness 10000) in paragraph at lines 250--251
+Underfull \hbox (badness 10000) in paragraph at lines 245--246
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 252--253
+Underfull \hbox (badness 10000) in paragraph at lines 247--248
 
  []
 
-<images/Actuator_mount.png, id=279, 416.15475pt x 359.54324pt>
+<images/Actuator_mount.png, id=284, 416.15475pt x 359.54324pt>
 File: images/Actuator_mount.png Graphic file (type png)
 
 <use images/Actuator_mount.png>
-Package pdftex.def Info: images/Actuator_mount.png used on input line 256.
+Package pdftex.def Info: images/Actuator_mount.png used on input line 251.
 (pdftex.def)             Requested size: 198.0pt x 171.07008pt.
 
-<images/Hydraulic_cylinder_mount.png, id=280, 518.53725pt x 381.8265pt>
+<images/Hydraulic_cylinder_mount.png, id=285, 518.53725pt x 381.8265pt>
 File: images/Hydraulic_cylinder_mount.png Graphic file (type png)
 
 <use images/Hydraulic_cylinder_mount.png>
 Package pdftex.def Info: images/Hydraulic_cylinder_mount.png used on input line
- 263.
+ 258.
 (pdftex.def)             Requested size: 198.0pt x 145.79471pt.
 
 
@@ -1648,7 +1648,7 @@ LaTeX Warning: `h' float specifier changed to `ht'.
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [11 <./images/Actuator_mount.png>]
-Underfull \hbox (badness 10000) in paragraph at lines 283--284
+Underfull \hbox (badness 10000) in paragraph at lines 278--279
 
  []
 
@@ -1656,19 +1656,19 @@ Underfull \hbox (badness 10000) in paragraph at lines 283--284
 Underfull \vbox (badness 1286) has occurred while \output is active []
 
  [12 <./images/Hydraulic_cylinder_mount.png>]
-Underfull \hbox (badness 10000) in paragraph at lines 285--286
+Underfull \hbox (badness 10000) in paragraph at lines 280--281
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 287--288
+Underfull \hbox (badness 10000) in paragraph at lines 282--283
 
  []
 
 [13] [14
 
 ]
-Underfull \hbox (badness 10000) in paragraph at lines 306--308
+Underfull \hbox (badness 10000) in paragraph at lines 301--303
 
  []
 
@@ -1694,26 +1694,19 @@ bibitemlist
 \tf@lot=\write11
 \openout11 = `BrakeController.lot'.
 
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 337.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 337.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 332.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 332.
  (BrakeController.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 337.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 337.
-
-
-Package rerunfilecheck Warning: File `BrakeController.out' has changed.
-(rerunfilecheck)                Rerun to get outlines right
-(rerunfilecheck)                or use package `bookmark'.
-
-Package rerunfilecheck Info: Checksums for `BrakeController.out':
-(rerunfilecheck)             Before: 87001B3F570C5922705E0F974F969AA2;1886
-(rerunfilecheck)             After:  DC93736FB957BF30D23FBBAC871E38E3;1954.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 332.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 332.
+Package rerunfilecheck Info: File `BrakeController.out' has not changed.
+(rerunfilecheck)             Checksum: DC93736FB957BF30D23FBBAC871E38E3;1954.
  ) 
 Here is how much of TeX's memory you used:
- 28143 strings out of 493329
- 472801 string characters out of 3139057
+ 28144 strings out of 493329
+ 472819 string characters out of 3139057
  2604366 words of memory out of 3000000
- 31033 multiletter control sequences out of 15000+200000
+ 31034 multiletter control sequences out of 15000+200000
  82286 words of font info for 67 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
  1003i,13n,1003p,1947b,497s stack positions out of 5000i,500n,10000p,200000b,50000s
@@ -1731,9 +1724,9 @@ b><C:/Program Files/MiKTeX 2.9/fonts/type1/public/lm/lmss12.pfb><C:/Program Fil
 es/MiKTeX 2.9/fonts/type1/public/lm/lmssbx10.pfb><C:/Program Files/MiKTeX 2.9/f
 onts/type1/public/lm/lmssdc10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/publ
 ic/lm/lmsy10.pfb>
-Output written on BrakeController.pdf (37 pages, 382887 bytes).
+Output written on BrakeController.pdf (37 pages, 383791 bytes).
 PDF statistics:
- 427 PDF objects out of 1000 (max. 8388607)
+ 431 PDF objects out of 1000 (max. 8388607)
  80 named destinations out of 1000 (max. 500000)
- 268 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 276 words of extra memory for PDF output out of 10000 (max. 10000000)
 
