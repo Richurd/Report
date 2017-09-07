@@ -25,6 +25,7 @@
 \usepackage[acronym]{glossaries} 
 \usepackage{graphicx} %To use pictures
 \usepackage[T1]{fontenc} %Includes '>'
+\usepackage[utf8]{inputenc} %för åäö
 \graphicspath{ {images/} }
 
 
@@ -35,8 +36,6 @@
 
 %\usepackage{comment} % enables the use of multi-line comments (\ifx \fi) 
 %\usepackage{fullpage} % changes the margin
-%\usepackage[utf8]{inputenc}
-%\usepackage[T1]{fontenc}
 
 
 
@@ -85,7 +84,6 @@ Write the abstract here.
 \end{abstract}
 \clearpage
 \begin{foreignabstract}{swedish}
-
 Abstract in Swedish goes here.
 
 \end{foreignabstract}
@@ -124,8 +122,6 @@ I would like to thank...
 This chapter will give an introduction to the thesis. 
 
 \section{Background}
-
- 
 The \gls{rcv} at \gls{kth} is a platform for research in vehicle autonomy and vehicle dynamics. For precise autonomous operation, accurate actuation of steering input and wheel torque is critical. The electrical wheel motors of the \gls{rcv} can produce torque for acceleration and braking up to a limit. However, for hard braking maneuvers, regenerative braking is not sufficient and a hydraulic brake system actuated by electric linear actuators is used in addition. In the current configuration, the hydraulic brakes actuate fairly slow (>1s before braking request is met). Thus, a redesign of the control software and the mechanical assembly is needed. The task is challenging due to the non-linear and environment dependent dynamics of the hydraulic system.
 
 \section{Purpose}
@@ -229,14 +225,14 @@ There is also a manually operated braking pedal that acts on the hydraulic syste
 At the start of the thesis project the idea was to use the original hardware setup that existed in the \gls{rcv}, but after testing and reading up on the original actuators a decision was made to change to a new set of actuators that are faster and stronger. 
 
 \subsection{Original actuators and lever arm}
-The original actuators was of an acme screw type, which involves a lot of friction where up to 80\% of the input power can be dissipated in friction losses [SOURCE]. This means that the motor within the actuator has to work hard to move the rod in each direction. The static friction is also very high, which raises a problem when it come to the control of the actuator. The actuator requires a high current to start moving to overcome the static friction, and when it has overcome that static friction the need of current to keep the motion going is not as high. Thus, the steps in current that is needed to make the actuator move offers a problem in controlling it, since it is hard to control with the step in current that is needed and very small movements in the actuator rod can have large effects to the pressure of the hydraulic system. \\
+The original actuators was of an acme screw type, which involves a lot of dynamic friction where up to 80\% of the input power can be dissipated in friction losses [SOURCE]. This means that the motor within the actuator has to work hard to move the rod in each direction. The static friction is also very high, which raises a problem when it come to the control of the actuator. The actuator requires a high current to start moving to overcome the static friction, and when it has overcome that static friction the need of current to keep the motion going is not as high. Thus, the steps in current that is needed to make the actuator move offers a problem in controlling it, since it is hard to control with the step in current that is needed and very small movements in the actuator rod can have large effects to the pressure of the hydraulic system. \\
 
 However, one feature that could be useful in the acme leadscrew actuators is that the configuration is, within certain forces, self locking. They function in such a way that it moves easily if force is applied from one direction , while if it is applied in the other direction it has to be very high in order for the piston to move. Thus, they can be used as parking brake when the vehicle is turned of, if no other means of parking brake is present. Since the ballscrew actuator has lower internal friction, it cannot be relied upon as parking brake. Though, a parking brake can easily be realized by other means, such as a lever  connected to the manual parking brake etc., and is therefore not included in the scope of this thesis\\
 
 The hardware setup, in terms of mounts and lever arm, that was originally mounted on the \gls{rcv} needed revision as well, especially the lever arms that transferred the force from the actuator to the hydraulic cylinder. As can be seen in picture [SOURCE TO PICTURE], there is a lever arm that transfers the force from actuator to hydraulic cylinder. This arm is over dimensioned, the lever arm is to long. Tests showed that the acme screw actuators reaches their stroke limit when the request for braking torque reaches a certain point, which means that the actuators is able to provide higher force than  originally is possible, hence, the lever arms can be shortened in order to make the system faster while keeping the amount of force that can be delivered. 
 
 \subsection{New actuators}
-
+New actuators was needed to make the system faster, and the decision fell on the MAXJACCCC SOMETHING, which 
 
 \subsection{Mounts for new actuators}
 
@@ -313,7 +309,7 @@ This is what a chapter looks like.
 
 \chapter{Discussion}
 This is what a chapter looks like.
-%%%%%%%%%%%%%%%   FUTURE WORK   %%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%   FUTURE WORK   %%%%%%%%%%%%%%%%%
 
 \chapter{Future work}
 This is what a chapter looks like.
@@ -323,10 +319,14 @@ This is what a chapter looks like.
 
 
 \bibliography{mybib}
+%%%%%%%%%%%%%%%   APPENDIX   %%%%%%%%%%%%%%%%%%%
 \appendix
 \addappheadtotoc
 \chapter{First Appendix}
+\section{Appendix A, Max Jac datasheet}
+\includepdf[pages={1-2}]{Max_Jac.pdf}
+\section{Appendix B, Electrak 1}
+\includepdf[pages={1-2}]{Electrac_1.pdf}
 
-Appendix text goes here.
 \glsaddall
 \end{document}

@@ -34,3 +34,5 @@
 \contentsline {chapter}{Bibliography}{23}{section*.5}
 \contentsline {chapter}{Appendices}{24}{section*.6}
 \contentsline {appendix}{\chapternumberline {A}First Appendix}{25}{appendix.A}
+\contentsline {section}{\numberline {A.1}Appendix A, Max Jac datasheet}{25}{section.A.1}
+\contentsline {section}{\numberline {A.2}Appendix B, Electrak 1}{28}{section.A.2}
