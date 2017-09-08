@@ -13,12 +13,12 @@
 \BOOKMARK [1][-]{section.2.2}{Results/Conclusions from background study}{chapter.2}% 13
 \BOOKMARK [0][-]{chapter.3}{Implementation}{}% 14
 \BOOKMARK [1][-]{section.3.1}{Original setup?}{chapter.3}% 15
-\BOOKMARK [1][-]{section.3.2}{Brake actuators and other hardware}{chapter.3}% 16
+\BOOKMARK [1][-]{section.3.2}{Brake actuators and new mounts}{chapter.3}% 16
 \BOOKMARK [2][-]{subsection.3.2.1}{Original actuators and lever arm}{section.3.2}% 17
 \BOOKMARK [2][-]{subsection.3.2.2}{New actuators}{section.3.2}% 18
 \BOOKMARK [2][-]{subsection.3.2.3}{Mounts for new actuators}{section.3.2}% 19
 \BOOKMARK [1][-]{section.3.3}{Implementation and tuning in simulink/simscape}{chapter.3}% 20
-\BOOKMARK [2][-]{subsection.3.3.1}{Simscape model \(and MBD?\)}{section.3.3}% 21
+\BOOKMARK [2][-]{subsection.3.3.1}{Simscape model and mbd}{section.3.3}% 21
 \BOOKMARK [2][-]{subsection.3.3.2}{Verification of simscape model}{section.3.3}% 22
 \BOOKMARK [2][-]{subsection.3.3.3}{Tuning controller}{section.3.3}% 23
 \BOOKMARK [0][-]{chapter.4}{Results}{}% 24

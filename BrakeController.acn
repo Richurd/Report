@@ -7,6 +7,7 @@
 \glossaryentry{PID?\glossentry{pid}|setentrycounter[]{page}\glsnumberformat}{}
 \glossaryentry{KTH?\glossentry{kth}|setentrycounter[]{page}\glsnumberformat}{}
 \glossaryentry{MBD?\glossentry{mbd}|setentrycounter[]{page}\glsnumberformat}{}
+\glossaryentry{MBD?\glossentry{mbd}|setentrycounter[]{page}\glsnumberformat}{}
 \glossaryentry{RCV?\glossentry{rcv}|setentrycounter[]{page}\glsnumberformat}{}
 \glossaryentry{MPC?\glossentry{mpc}|setentrycounter[]{page}\glsnumberformat}{}
 \glossaryentry{ITRL?\glossentry{itrl}|setentrycounter[]{page}\glsnumberformat}{}
@@ -43,7 +44,9 @@
 \glossaryentry{KTH?\glossentry{kth}|setentrycounter[]{page}\glsnumberformat}{12}
 \glossaryentry{MBD?\glossentry{mbd}|setentrycounter[]{page}\glsnumberformat}{13}
 \glossaryentry{MBD?\glossentry{mbd}|setentrycounter[]{page}\glsnumberformat}{13}
+\glossaryentry{DC?\glossentry{dc}|setentrycounter[]{page}\glsnumberformat}{13}
 \glossaryentry{MBD?\glossentry{mbd}|setentrycounter[]{page}\glsnumberformat}{13}
+\glossaryentry{MBD?\glossentry{mbd}|setentrycounter[]{page}\glsnumberformat}{14}
 \glossaryentry{PID?\glossentry{pid}|setentrycounter[]{page}\glsnumberformat}{14}
 \glossaryentry{RCV?\glossentry{rcv}|setentrycounter[]{page}\glsnumberformat}{24}
 \glossaryentry{MPC?\glossentry{mpc}|setentrycounter[]{page}\glsnumberformat}{24}
