@@ -26,6 +26,8 @@
 \usepackage{graphicx} %To use pictures
 \usepackage[T1]{fontenc} %Includes '>'
 \usepackage[utf8]{inputenc} %för åäö
+
+
 \graphicspath{ {images/} }
 
 
@@ -232,7 +234,24 @@ However, one feature that could be useful in the acme leadscrew actuators is tha
 The hardware setup, in terms of mounts and lever arm, that was originally mounted on the \gls{rcv} needed revision as well, especially the lever arms that transferred the force from the actuator to the hydraulic cylinder. As can be seen in picture [SOURCE TO PICTURE], there is a lever arm that transfers the force from actuator to hydraulic cylinder. This arm is over dimensioned, the lever arm is to long. Tests showed that the acme screw actuators reaches their stroke limit when the request for braking torque reaches a certain point, which means that the actuators is able to provide higher force than  originally is possible, hence, the lever arms can be shortened in order to make the system faster while keeping the amount of force that can be delivered. 
 
 \subsection{New actuators}
-New actuators was needed to make the system faster, and the decision fell on the MAXJACCCC SOMETHING, which 
+New actuators was needed to make the system faster, characteristics such as low internal friction and fast linear motion speed are desirable. Concerning the friction, a change from acme screw to ball screw actuators had to be made since ball screw actuators incorporate drastically lower friction that acme screw [SOURCE?MAYBE??]. \gls{itrl} has good contacts with Thomson Linear, which is a large linear motion supplier in Sweden, a decision was made to order one of their actuators due to decent lead times and prices, as well as the possibility of invoicing. Thomson Linear offers many different ball screw actuators, but the decision fell on the Max Jac with a maximum force of 800 Newton and a speed of 30 millimeters per second at full load. Compared to the old actuators, the electak 1, which has a maximum force of 225 Newton and a speed of 33 millimeters per second at full load, the new one are much stronger, albeit slightly slower at full load. What is interesting though, is not the speed at full load, but the no-load speed since the brake actuation in the beginning requires little force but high speeds, which is 60 millimeters per second for the Max Jac and only 45 millimeters per second for the Electrak 1. The datasheet of the Max Jac can be found in appendix \ref{appendix:Max_Jac} and the datasheet of the Electrak 1 can be found in appendix \ref{appendix:Electrak_1}.\\
+
+To be sure that the new actuator can deliver enough force, the maximum braking force for the whole vehicle must be calculated. The highest needed braking torque on each wheel was calculated with respect to the maximum negative acceleration that is stated in the requirements. If the acceleration is known, as well as the mass of the vehicle the total force that needs to act on the vehicle can be calculated with Newtons second law, 
+\begin{equation}
+F_{tot}=m\cdot a,
+\end{equation}
+where $F_{tot}$ is the total force needed to achieve acceptable deceleration, $m$ is the mass of the vehicle and $a$ is the acceleration. The vehicle has four wheels and the force is considered to be divided evenly distributed on each wheel. Hence, this gives us 
+\begin{equation}
+F_{wheel}=\frac{F_{tot}}{4},
+\end{equation}
+where $F_{wheel}$ is the force needed on each wheel. The torque needed on that wheel can then be calculated by 
+\begin{equation}
+M=F_{wheel}\cdot r,
+\end{equation}
+where $M$ is the torque and $r$ is the radius of the wheel. The required torque on each wheel was calculated to 350 Nm.\\
+
+The step from torque to pressure in hydraulic system was made earlier when the original braking system was implemented, before this thesis started. It was done by a series of tests where the electric motors where set to give a specific torque and the brakes where actuated manually to meet that torque by letting the \gls{rcv} move slightly, and then note the pressure in the hydraulic system for that torque. The result was linear,and thus the pressure can be multiplied by a constant to get the applied braking torque. If the maximum braking torque needed is 350 Nm, we get a maximum pressure of 15.4 Bar in the hydraulic system.
+
 
 \subsection{Mounts for new actuators}
 
@@ -283,21 +302,7 @@ Something about anti windup\\
 \chapter{Results}
 This chapter presents the results of the thesis.
 \section{Hardware}
-The highest needed braking torque on each wheel was calculated with respect to the maximum negative acceleration that is stated in the requirements. If the acceleration is known, as well as the mass of the vehicle the total force that needs to act on the vehicle can be calculated with Newtons second law, 
-\begin{equation}
-F_{tot}=m\cdot a,
-\end{equation}
-where $F_{tot}$ is the total force needed to achieve acceptable deceleration, $m$ is the mass of the vehicle and $a$ is the acceleration. The vehicle has four wheels and the force is considered to be divided evenly distributed on each wheel. Hence, this gives us 
-\begin{equation}
-F_{wheel}=\frac{F_{tot}}{4},
-\end{equation}
-where $F_{wheel}$ is the force needed on each wheel. The torque needed on that wheel can then be calculated by 
-\begin{equation}
-M=F_{wheel}\cdot r,
-\end{equation}
-where $M$ is the torque and $r$ is the radius of the wheel. The required torque on each wheel was calculated to 350 Nm.\\
 
-Beskriva hur Pressure--->Torque gått till under mätning?? 
 
 
 
@@ -310,6 +315,7 @@ This is what a chapter looks like.
 \chapter{Discussion}
 This is what a chapter looks like.
 %%%%%%%%%%%%%%%   FUTURE WORK   %%%%%%%%%%%%%%%%%
+(Maxtryck är 15 Bar- upplösning på sensor är 100 bar, kan bytas mot mindre och exaktare)
 
 \chapter{Future work}
 This is what a chapter looks like.
@@ -317,13 +323,14 @@ This is what a chapter looks like.
 
 \bibliography{mybib}
 %%%%%%%%%%%%%%%   APPENDIX   %%%%%%%%%%%%%%%%%%%
+\glsaddall
 \appendix
 \addappheadtotoc
-\chapter{First Appendix}
-\section{Appendix A, Max Jac datasheet}
+\chapter{Max Jac Datasheet}
+\label{appendix:Max_Jac}
 \includepdf[pages={1-2}]{Max_Jac.pdf}
-\section{Appendix B, Electrak 1}
+\chapter{Elektrak 1 datasheet}
+\label{appendix:Electrak_1}
 \includepdf[pages={1-2}]{Electrac_1.pdf}
 
-\glsaddall
 \end{document}

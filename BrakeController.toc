@@ -21,11 +21,11 @@
 \contentsline {section}{\numberline {3.2}Brake actuators and other hardware}{10}{section.3.2}
 \contentsline {subsection}{\numberline {3.2.1}Original actuators and lever arm}{10}{subsection.3.2.1}
 \contentsline {subsection}{\numberline {3.2.2}New actuators}{11}{subsection.3.2.2}
-\contentsline {subsection}{\numberline {3.2.3}Mounts for new actuators}{11}{subsection.3.2.3}
-\contentsline {section}{\numberline {3.3}Implementation and tuning in simulink/simscape}{12}{section.3.3}
-\contentsline {subsection}{\numberline {3.3.1}Simscape model (and MBD?)}{12}{subsection.3.3.1}
-\contentsline {subsection}{\numberline {3.3.2}Verification of simscape model}{12}{subsection.3.3.2}
-\contentsline {subsection}{\numberline {3.3.3}Tuning controller}{13}{subsection.3.3.3}
+\contentsline {subsection}{\numberline {3.2.3}Mounts for new actuators}{12}{subsection.3.2.3}
+\contentsline {section}{\numberline {3.3}Implementation and tuning in simulink/simscape}{13}{section.3.3}
+\contentsline {subsection}{\numberline {3.3.1}Simscape model (and MBD?)}{13}{subsection.3.3.1}
+\contentsline {subsection}{\numberline {3.3.2}Verification of simscape model}{13}{subsection.3.3.2}
+\contentsline {subsection}{\numberline {3.3.3}Tuning controller}{14}{subsection.3.3.3}
 \contentsline {chapter}{\chapternumberline {4}Results}{15}{chapter.4}
 \contentsline {section}{\numberline {4.1}Hardware}{15}{section.4.1}
 \contentsline {chapter}{\chapternumberline {5}Conclusion}{17}{chapter.5}
@@ -33,6 +33,5 @@
 \contentsline {chapter}{\chapternumberline {7}Future work}{21}{chapter.7}
 \contentsline {chapter}{Bibliography}{23}{section*.5}
 \contentsline {chapter}{Appendices}{24}{section*.6}
-\contentsline {appendix}{\chapternumberline {A}First Appendix}{25}{appendix.A}
-\contentsline {section}{\numberline {A.1}Appendix A, Max Jac datasheet}{25}{section.A.1}
-\contentsline {section}{\numberline {A.2}Appendix B, Electrak 1}{28}{section.A.2}
+\contentsline {appendix}{\chapternumberline {A}Max Jac Datasheet}{25}{appendix.A}
+\contentsline {appendix}{\chapternumberline {B}Elektrak 1 datasheet}{29}{appendix.B}
