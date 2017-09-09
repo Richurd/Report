@@ -163,7 +163,7 @@ Concerning the hardware, the actuators that are mounted on the vehicle is relati
 
 - Should it be optimized for torque meet, or regeneration? that is, should the regenerative me used as torquefill or as main brake? Probably torque fill.
 
-- Maximum negative acceleration/ deceleration.
+- Maximum negative acceleration / deceleration.
 
 \section{Outline}
 What does the report discuss?
@@ -173,7 +173,7 @@ This chapter discusses this, this other chapter discusses that...
 %%%%%%%%%%%%%%%%%   BACKGROUND STUDY   %%%%%%%%%%%%%%%%
 
 \chapter{Background study}
-This section presents the background study that was conducted in the early parts of this project. 
+To be able to answer the questions of this thesis and to base the thesis on fact a literature study was made. The study includes information about the hardware setup, both which are preferably used in state of the art as well as information about the parts already mounted on the \gls{rcv}, together with information about controllers used for controlling the system. This chapter presents the background study that was conducted together with conclusions draw by the study.
 
 
 \section{Frame of reference}
@@ -182,7 +182,8 @@ The literature search began with searches in the IEEE Xplore database, but ended
 The literature searches showed that there where a few methods of controlling a brake actuator or braking system that appeared more frequently than other. These methods where then included in the search, together with searches solely for that method. This way each search only resulted in a few certain articles or papers where most of them where relevant or at least semi-relevant to this thesis project. These articles and their contents are discussed in the following sections withing this chapter.
 
 
-\subsection{Hardware setup}
+
+\subsection{Braking systems for autonomous vehicles}
 Yu et al. \cite{Yu} discusses differences in a linearly actuated system vs a hydraulic pump system. The linearly actuated system uses a linear actuator that press directly on a hydraulic cylinder, while a hydraulic pump system uses an electric pump to build up pressure and controls the pressure in the system by valves and/or solenoids. The linear actuators are simpler and more fail safe, since it doesn't have as many valves from where there can be a leakage of hydraulic fluid. 
 
 
@@ -204,6 +205,9 @@ Although the actuator in this car is a electric pump compared to a linear actuat
 
 The brake blending will be done by a simple function where the regenerative brakes brakes as much as possible, and when they have reached their maximum braking power, the friction brakes steps in to fill in the missing torque, as described by Troung \cite{truongdevelopment}. \newline
 
+\section{Linear actuators}
+
+\section{Controllers}
 
 \section{Results/Conclusions from background study}
 The results from the literature study is that the two friction brake controllers will consist of a \gls{pid} controller and a fuzzy logic controller. 
