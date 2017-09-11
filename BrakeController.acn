@@ -23,6 +23,7 @@
 \glossaryentry{RCV?\glossentry{rcv}|setentrycounter[]{page}\glsnumberformat}{1}
 \glossaryentry{RCV?\glossentry{rcv}|setentrycounter[]{page}\glsnumberformat}{1}
 \glossaryentry{ABS?\glossentry{abs}|setentrycounter[]{page}\glsnumberformat}{2}
+\glossaryentry{RCV?\glossentry{rcv}|setentrycounter[]{page}\glsnumberformat}{2}
 \glossaryentry{RCV?\glossentry{rcv}|setentrycounter[]{page}\glsnumberformat}{3}
 \glossaryentry{RCV?\glossentry{rcv}|setentrycounter[]{page}\glsnumberformat}{3}
 \glossaryentry{RCV?\glossentry{rcv}|setentrycounter[]{page}\glsnumberformat}{5}
@@ -49,6 +50,7 @@
 \glossaryentry{MBD?\glossentry{mbd}|setentrycounter[]{page}\glsnumberformat}{13}
 \glossaryentry{MBD?\glossentry{mbd}|setentrycounter[]{page}\glsnumberformat}{14}
 \glossaryentry{PID?\glossentry{pid}|setentrycounter[]{page}\glsnumberformat}{14}
+\glossaryentry{RCV?\glossentry{rcv}|setentrycounter[]{page}\glsnumberformat}{15}
 \glossaryentry{RCV?\glossentry{rcv}|setentrycounter[]{page}\glsnumberformat}{24}
 \glossaryentry{MPC?\glossentry{mpc}|setentrycounter[]{page}\glsnumberformat}{24}
 \glossaryentry{ITRL?\glossentry{itrl}|setentrycounter[]{page}\glsnumberformat}{24}
