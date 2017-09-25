@@ -295,7 +295,17 @@ The plant model was constructed in Simulink, mostly using the Simscape toolbox. 
 The choice of using \gls{mbd} was due to the fact that it is an easy and fast. This way of solving a problem by making a software plant model and designing the controller from there is called \gls{mbd}, which has become a very popular method of solving engineering problems, since when a plant model has been made it is easy, fast and cheap to develop and improve the controls\cite{2010-01-1999}. 
 
 \subsection{Verification of simscape model}
-When the simscape model was done the plant need to be verified before the of the controlled is done. The verification was made by running the physical system with the new actuators and all necessary hard ware mounted at certain current requests and the compare the results with from the same cases of current request on the plant model. The results can be seen in [FIGURE]. 
+When the simscape model was done the plant need to be verified before the of the controlled is done. The verification was made by running the physical system with the new actuators and all necessary hard ware mounted at certain current requests and the compare the results with from the same cases of current request on the plant model. The results can be seen in [FIGURE]. \\
+
+Discuss the Lineaarization work?\\
+
+The verification was done at certains currents fed into the actuators, these where 500, 800, 1000 and 1500 mA. This corresponded to 12, 35, 48 and 68 Bar. While running the system will not go above 20 Bar, but because of the internal coulomb friction the actuator did not move until about 400-500 mA where applied, these levels were used to verify the model.\\
+
+When the rear brakes where applied the pressure sank in the front, which means the system in nit that exact, and is why the verification can be accepted. \\
+
+No way to implement coulomb friction, which is a big part in these acme and lead screws. This is (probably) why the validation becomes sort of bad.\\
+
+
 
 \subsection{Tuning controller}
 The \gls{pid} controlled was tuned using pole placement design. \\

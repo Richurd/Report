@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.17 (MiKTeX 2.9.6210 64-bit) (preloaded format=pdflatex 2017.4.12)  11 SEP 2017 17:37
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (MiKTeX 2.9.6210 64-bit) (preloaded format=pdflatex 2017.4.12)  25 SEP 2017 21:28
 entering extended mode
 **./BrakeController.tex
 (BrakeController.tex
@@ -2049,17 +2049,42 @@ Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 (hyperref)                removing `\gls' on input line 292.
 
 [13 <./images/Hydraulic_cylinder_mount.png>]
-Underfull \hbox (badness 10000) in paragraph at lines 301--302
+Underfull \hbox (badness 10000) in paragraph at lines 298--299
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 303--304
+Underfull \hbox (badness 10000) in paragraph at lines 300--301
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 305--306
+Underfull \hbox (badness 10000) in paragraph at lines 302--303
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 304--305
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 306--307
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 311--312
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 313--314
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 315--316
 
  []
 
@@ -2082,7 +2107,7 @@ F version <1.7>, but at most version <1.5> allowed
 <Max_Jac.pdf, id=386, 614.295pt x 794.97pt>
 File: Max_Jac.pdf Graphic file (type pdf)
  <use Max_Jac.pdf>
-Package pdftex.def Info: Max_Jac.pdf used on input line 343.
+Package pdftex.def Info: Max_Jac.pdf used on input line 353.
 (pdftex.def)             Requested size: 614.29349pt x 794.96806pt.
 
 
@@ -2090,7 +2115,7 @@ pdfTeX warning: miktex-pdftex.exe (file ./Max_Jac.pdf): PDF inclusion: found PD
 F version <1.7>, but at most version <1.5> allowed
 File: Max_Jac.pdf Graphic file (type pdf)
 <use Max_Jac.pdf>
-Package pdftex.def Info: Max_Jac.pdf used on input line 343.
+Package pdftex.def Info: Max_Jac.pdf used on input line 353.
 (pdftex.def)             Requested size: 614.29349pt x 794.96806pt.
 
 
@@ -2103,28 +2128,28 @@ F version <1.7>, but at most version <1.5> allowed
 <Max_Jac.pdf, id=389, page=1, 614.295pt x 794.97pt>
 File: Max_Jac.pdf Graphic file (type pdf)
  <use Max_Jac.pdf, page 1>
-Package pdftex.def Info: Max_Jac.pdf, page1 used on input line 343.
+Package pdftex.def Info: Max_Jac.pdf, page1 used on input line 353.
 (pdftex.def)             Requested size: 614.29349pt x 794.96806pt.
 File: Max_Jac.pdf Graphic file (type pdf)
 
 <use Max_Jac.pdf, page 1>
-Package pdftex.def Info: Max_Jac.pdf, page1 used on input line 343.
+Package pdftex.def Info: Max_Jac.pdf, page1 used on input line 353.
 (pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
  [25
 
 ]
 File: Max_Jac.pdf Graphic file (type pdf)
  <use Max_Jac.pdf, page 1>
-Package pdftex.def Info: Max_Jac.pdf, page1 used on input line 343.
+Package pdftex.def Info: Max_Jac.pdf, page1 used on input line 353.
 (pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
 File: Max_Jac.pdf Graphic file (type pdf)
 
 <use Max_Jac.pdf, page 1>
-Package pdftex.def Info: Max_Jac.pdf, page1 used on input line 343.
+Package pdftex.def Info: Max_Jac.pdf, page1 used on input line 353.
 (pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
 File: Max_Jac.pdf Graphic file (type pdf)
  <use Max_Jac.pdf, page 1>
-Package pdftex.def Info: Max_Jac.pdf, page1 used on input line 343.
+Package pdftex.def Info: Max_Jac.pdf, page1 used on input line 353.
 (pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
  [26 <./Max_Jac.pdf>]
 
@@ -2133,16 +2158,16 @@ F version <1.7>, but at most version <1.5> allowed
 <Max_Jac.pdf, id=433, page=2, 614.295pt x 794.97pt>
 File: Max_Jac.pdf Graphic file (type pdf)
  <use Max_Jac.pdf, page 2>
-Package pdftex.def Info: Max_Jac.pdf, page2 used on input line 343.
+Package pdftex.def Info: Max_Jac.pdf, page2 used on input line 353.
 (pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
 File: Max_Jac.pdf Graphic file (type pdf)
 
 <use Max_Jac.pdf, page 2>
-Package pdftex.def Info: Max_Jac.pdf, page2 used on input line 343.
+Package pdftex.def Info: Max_Jac.pdf, page2 used on input line 353.
 (pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
 File: Max_Jac.pdf Graphic file (type pdf)
  <use Max_Jac.pdf, page 2>
-Package pdftex.def Info: Max_Jac.pdf, page2 used on input line 343.
+Package pdftex.def Info: Max_Jac.pdf, page2 used on input line 353.
 (pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
  [27 <./Max_Jac.pdf>]
 [28
@@ -2154,7 +2179,7 @@ pdfTeX warning: miktex-pdftex.exe (file ./Electrac_1.pdf): PDF inclusion: found
 <Electrac_1.pdf, id=448, 597.50829pt x 845.0471pt>
 File: Electrac_1.pdf Graphic file (type pdf)
  <use Electrac_1.pdf>
-Package pdftex.def Info: Electrac_1.pdf used on input line 346.
+Package pdftex.def Info: Electrac_1.pdf used on input line 356.
 (pdftex.def)             Requested size: 597.50682pt x 845.04504pt.
 
 
@@ -2162,7 +2187,7 @@ pdfTeX warning: miktex-pdftex.exe (file ./Electrac_1.pdf): PDF inclusion: found
  PDF version <1.7>, but at most version <1.5> allowed
 File: Electrac_1.pdf Graphic file (type pdf)
 <use Electrac_1.pdf>
-Package pdftex.def Info: Electrac_1.pdf used on input line 346.
+Package pdftex.def Info: Electrac_1.pdf used on input line 356.
 (pdftex.def)             Requested size: 597.50682pt x 845.04504pt.
 
 
@@ -2176,26 +2201,26 @@ pdfTeX warning: miktex-pdftex.exe (file ./Electrac_1.pdf): PDF inclusion: found
 File: Electrac_1.pdf Graphic file (type pdf)
 
 <use Electrac_1.pdf, page 1>
-Package pdftex.def Info: Electrac_1.pdf, page1 used on input line 346.
+Package pdftex.def Info: Electrac_1.pdf, page1 used on input line 356.
 (pdftex.def)             Requested size: 597.50682pt x 845.04504pt.
 File: Electrac_1.pdf Graphic file (type pdf)
  <use Electrac_1.pdf, page 1>
-Package pdftex.def Info: Electrac_1.pdf, page1 used on input line 346.
+Package pdftex.def Info: Electrac_1.pdf, page1 used on input line 356.
 (pdftex.def)             Requested size: 597.53416pt x 845.08372pt.
  [29]
 File: Electrac_1.pdf Graphic file (type pdf)
 
 <use Electrac_1.pdf, page 1>
-Package pdftex.def Info: Electrac_1.pdf, page1 used on input line 346.
+Package pdftex.def Info: Electrac_1.pdf, page1 used on input line 356.
 (pdftex.def)             Requested size: 597.53416pt x 845.08372pt.
 File: Electrac_1.pdf Graphic file (type pdf)
  <use Electrac_1.pdf, page 1>
-Package pdftex.def Info: Electrac_1.pdf, page1 used on input line 346.
+Package pdftex.def Info: Electrac_1.pdf, page1 used on input line 356.
 (pdftex.def)             Requested size: 597.53416pt x 845.08372pt.
 File: Electrac_1.pdf Graphic file (type pdf)
 
 <use Electrac_1.pdf, page 1>
-Package pdftex.def Info: Electrac_1.pdf, page1 used on input line 346.
+Package pdftex.def Info: Electrac_1.pdf, page1 used on input line 356.
 (pdftex.def)             Requested size: 597.53416pt x 845.08372pt.
  [30 <./Electrac_1.pdf>]
 
@@ -2205,16 +2230,16 @@ pdfTeX warning: miktex-pdftex.exe (file ./Electrac_1.pdf): PDF inclusion: found
 File: Electrac_1.pdf Graphic file (type pdf)
 
 <use Electrac_1.pdf, page 2>
-Package pdftex.def Info: Electrac_1.pdf, page2 used on input line 346.
+Package pdftex.def Info: Electrac_1.pdf, page2 used on input line 356.
 (pdftex.def)             Requested size: 597.53416pt x 845.08372pt.
 File: Electrac_1.pdf Graphic file (type pdf)
  <use Electrac_1.pdf, page 2>
-Package pdftex.def Info: Electrac_1.pdf, page2 used on input line 346.
+Package pdftex.def Info: Electrac_1.pdf, page2 used on input line 356.
 (pdftex.def)             Requested size: 597.53416pt x 845.08372pt.
 File: Electrac_1.pdf Graphic file (type pdf)
 
 <use Electrac_1.pdf, page 2>
-Package pdftex.def Info: Electrac_1.pdf, page2 used on input line 346.
+Package pdftex.def Info: Electrac_1.pdf, page2 used on input line 356.
 (pdftex.def)             Requested size: 597.53416pt x 845.08372pt.
  [31 <./Electrac_1.pdf>]
 \tf@toc=\write9
@@ -2226,11 +2251,11 @@ Package pdftex.def Info: Electrac_1.pdf, page2 used on input line 346.
 \tf@lot=\write11
 \openout11 = `BrakeController.lot'.
 
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 348.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 348.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 358.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 358.
  (BrakeController.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 348.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 348.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 358.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 358.
 Package rerunfilecheck Info: File `BrakeController.out' has not changed.
 (rerunfilecheck)             Checksum: F67F91874C1D063B0392962E1613CD96;2291.
  ) 
@@ -2256,7 +2281,7 @@ b><C:/Program Files/MiKTeX 2.9/fonts/type1/public/lm/lmss12.pfb><C:/Program Fil
 es/MiKTeX 2.9/fonts/type1/public/lm/lmssbx10.pfb><C:/Program Files/MiKTeX 2.9/f
 onts/type1/public/lm/lmssdc10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/publ
 ic/lm/lmsy10.pfb>
-Output written on BrakeController.pdf (43 pages, 1021590 bytes).
+Output written on BrakeController.pdf (43 pages, 1022160 bytes).
 PDF statistics:
  574 PDF objects out of 1000 (max. 8388607)
  91 named destinations out of 1000 (max. 500000)
