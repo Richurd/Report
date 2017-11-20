@@ -37,8 +37,10 @@ Scanning input file BrakeController.acn...
    -- Illegal page number .
 !! Input index error (file = BrakeController.acn, line = 18):
    -- Illegal page number .
-.done (34 entries accepted, 18 rejected).
-Sorting entries....done (172 comparisons).
-Generating output file BrakeController.acr....done (39 lines written, 0 warnings).
+!! Input index error (file = BrakeController.acn, line = 19):
+   -- Illegal page number .
+.done (43 entries accepted, 19 rejected).
+Sorting entries....done (234 comparisons).
+Generating output file BrakeController.acr....done (43 lines written, 0 warnings).
 Output written in BrakeController.acr.
 Transcript written in BrakeController.alg.

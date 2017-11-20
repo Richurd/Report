@@ -144,14 +144,16 @@ Wheel slip and \gls{abs} are both important factors while designing a modern bra
  
 \section{Research design/Methodology}
 The methodology used for this project will be a case study of how to implement one or more brake controllers, which works best for solving the problem stated together with a comparison of the controllers advantages and disadvantages. The case study will have its focus on qualitative research, as there's extensive work already done within this area. The testing will also have a qualitative orientation in the end to validate the brake model as well as how the controller performs. 
+
 \subsection{Tests}
-To evaluate the results of this thesis, tests will be made to compare how the system behaves with the old hardware and controller compared to the new system setup. The first type of test will consist of the \gls{rcv} standing still and then giving different torque requests of 2, 5, 10, and 15 [Five of each?] and then measuring the response time by measuring in the resulting plots. 
-The other test will be braking performance in terms of reduced braking distance. Tests will be done at three different speeds, which are 5, 15 and 30 km/h, and five tests will be done for each test case. [For these tests i need speed(both starting velocity and plot), pressure in system, ]
+To evaluate the results of this thesis, tests will be made to compare how the system behaves with the old hardware and controller compared to the new system setup. The first type of test will consist of the \gls{rcv} standing still and then giving different torque requests of 5, 10, 20 and 40 Bar, five iterations for each pressure level, and then measuring the response time by plotting the results. 
+The other test will be braking performance in terms of reduced braking distance. These tests was done at test track 2 at Arlanda. Tests will be done at two different speeds, which are 15 and 30 km/h, and five tests will be done for each test case. [For these tests i need speed(both starting velocity and plot), pressure in system, ]
+
 
 \section{Ethics}
 Brakes is one of the most vital part to the safety of a vehicle. Although this project handles the brakes while in autonomous drive mode, there will still be one or two people in the car monitoring the autonomous driving, whom might be susceptible to great risks if the brakes do not work. To keep the safety of the vehicle at acceptable levels there is a manual brake pedal that overrides the autonomous drive mode, and brakes the vehicle if necessary. This brake pedal is controlled by the person in the drivers seat, who has experience with the vehicle and is much aware of the risks and behavior of the car. 
 
-The vehicle is not legal to drive in regular traffic, and thus is only driven in big closed off areas, such as a rented runway on Arlanda or in a closed off parking lot, where it is driven at low speeds of up to 45 km/h. The vehicle is also equipped with seat belts dimensioned for racing. 
+The vehicle is not legal to drive in regular traffic, and thus it is only driven in big closed off areas, such as a rented runway on Arlanda or in a closed off parking lot, where it is driven at low speeds of up to 45 km/h. The vehicle is also equipped with seat belts dimensioned for racing. 
 It is an electric car so the people around wont be exposed to any harmful exhausts. 
 
 
@@ -202,7 +204,7 @@ Line, Manzie and Good \cite{2004-01-2050} as well as in Ahn et al. \cite{ahn2009
 
 
 
-Frede, Khodabakhshian and Malmquist \cite{Frede460614} has done a state-of-the-art report on by-wire systems, with an extensive part about brake-by-wire. They present an overview of brake blending strategies as well as control strategies to regulate braking torque. Most reports discuss brake blending control, but reports where  brake torque control is achieved by fuzzy logic is presented as well. Isermann \cite{661149} also describes the strengths of a fuzzy logic controller, due to its ability to handle nonlinear systems. \newline
+Frede, Khodabakhshian and Malmquist \cite{Frede460614} has written a state-of-the-art report on by-wire systems, with an extensive part about brake-by-wire. They present an overview of brake blending strategies as well as control strategies to regulate braking torque. Most reports discuss brake blending control, but reports where  brake torque control is achieved by fuzzy logic is presented as well. Isermann \cite{661149} also describes the strengths of a fuzzy logic controller, due to its ability to handle nonlinear systems. \newline
 
 Milan{\'e}s et al. \cite{milanes2010electro} presents in an article how an autonomous braking system is implemented into a ordinary road car. The car is already fitted with a hydraulic braking system with a manually controlled braking pedal, and the autonomous braking system is added on to that, resulting in a electro-hydraulic autonomous braking system similar to that on the \gls{rcv}. 
 Although the actuator in this car is a electric pump compared to a linear actuator on the \gls{rcv}, this report shows that a electro-hydraulic system is satisfactory, even though other reports state that electro-mechanical systems are preferable \cite{MechatronicsBook} \cite{Xiang}. \newline
@@ -318,7 +320,8 @@ Something about anti windup\\
 
 
 \chapter{Results}
-This chapter presents the results of the thesis.
+This chapter presents the results from the tests that was made in this thesis.
+
 \section{Actuator response time}
 This section will show the plots of tests while \gls{rcv} standing still. 
 
