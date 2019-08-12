@@ -1,12 +1,12 @@
-\select@language {english}
-\select@language {english}
-\select@language {swedish}
-\select@language {english}
+\babel@toc {english}{}
+\babel@toc {english}{}
+\babel@toc {swedish}{}
+\babel@toc {english}{}
 \addvspace {10pt}
 \addvspace {10pt}
 \addvspace {10pt}
-\contentsline {figure}{\numberline {3.1}{\ignorespaces CAD picture of mount}}{12}{figure.3.1}
-\contentsline {figure}{\numberline {3.2}{\ignorespaces CAD picture of the hydraulic cylinder mount}}{13}{figure.3.2}
+\contentsline {figure}{\numberline {3.1}{\ignorespaces CAD picture of mount}}{12}{figure.3.1}% 
+\contentsline {figure}{\numberline {3.2}{\ignorespaces CAD picture of the hydraulic cylinder mount}}{13}{figure.3.2}% 
 \addvspace {10pt}
 \addvspace {10pt}
 \addvspace {10pt}
