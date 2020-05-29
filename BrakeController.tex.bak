@@ -1,4 +1,4 @@
-
+      
 \documentclass[a4paper,11pt]{kth-mag}
 
 \usepackage[acronym]{glossaries}
@@ -122,15 +122,14 @@ I would like to thank...
 \chapter{Introduction}
 
 This chapter will give an introduction to the thesis. 
-Here are some text.
 
 \section{Background}
-The \gls{rcv} at \gls{kth} is a platform for research in vehicle autonomy and vehicle dynamics. For precise autonomous operation, accurate actuation of steering input and wheel torque is critical. The electrical wheel motors of the \gls{rcv} can produce torque for acceleration and braking up to a limit. However, for hard braking maneuvers, regenerative braking is not sufficient and a hydraulic brake system actuated by electric linear actuators is used in addition. In the current configuration, the hydraulic brakes actuate fairly slow (>1s before braking request is met). Thus, a redesign of the control software and the mechanical assembly is needed. The task is challenging due to the non-linear and environment dependent dynamics of the hydraulic system.
+The \gls{rcv} is a platform for research in vehicle autonomy and vehicle dynamics at \gls{kth}. It is an electric vehicle with four electric hub motors at each wheel. The vehicle has room for two persons, one driver and one passenger, and it can be driven both manually as well as autonomously. For precise autonomous operation, accurate actuation of steering input and wheel torque is critical. The electrical wheel motors of the \gls{rcv} can produce torque for acceleration and braking up to a limit. However, for hard braking maneuvers, regenerative braking is not sufficient and a hydraulic brake system actuated by electric linear actuators is used in addition. In the original configuration, the hydraulic brakes actuate fairly slow (>1s before braking request is met). Thus, a redesign of the control software and the mechanical assembly is needed. The task is challenging due to the non-linear and environment dependent dynamics of the hydraulic system.
 
 \section{Purpose}
-The vehicle industry as well as industry in general is moving towards automation to lower costs, risks, lead times and work load for employees. Today there already exists some form of autonomous driving in vehicles, such as Tesla's Auto pilot and Volvo which are conducting tests with autonomous high way driving around Gothenburg. For the technology to be accepted by the masses it need to be safe and not put people, animals or other things at risk. Since the \gls{rcv} is built for autonomous driving, but lacks an efficient friction brake, the purpose of this thesis will be to evaluate and improve the performance of the friction brake system. The updated braking system on the \gls{rcv} will be discussed how they can be applied in general autonomous vehicles, 
+The vehicle industry as well as industry in general is moving towards automation to lower costs, risks, lead times and work load for employees. Today there already exists some form of autonomous driving in vehicles, such as Tesla's Auto pilot and Volvo which are conducting tests with autonomous highway driving around Gothenburg. For the technology to be accepted by the masses it need to be safe and not put people, property or environment at risk. Since the \gls{rcv} is built for autonomous driving, but lacks an efficient friction brake, the purpose of this thesis will be to evaluate and improve the performance of the friction brake system. The updated braking system on the \gls{rcv} will be discussed how they can be applied in general autonomous vehicles, 
 
-To fulfill the purpose a couple of research questions was set up. These are as follows: 
+To fulfil the purpose a couple of research questions was set up. These are 
 \begin{itemize}
 \item Which are the most common methods used in friction brake controllers in brake-by-wire systems and autonomous vehicles? 
 \item How does the chosen control method enhance how the torque request are met, compared to the original hardware setup and controller?
@@ -138,7 +137,7 @@ To fulfill the purpose a couple of research questions was set up. These are as f
 \end{itemize}
 
 \section{Delimitations}
-A lot of aspects affects the behavior of the brakes, and to achieve a properly functioning brake with good reaction time will consume much time. Therefore delimitations must be made in order to make the thesis feasible within the limited time frame. The focus of this thesis will be on making an existing braking system faster in terms of reaction time of reaching the requested braking torque. 
+A lot of aspects affects the behavior of the brakes, and  achieving a properly functioning brake with good reaction time will consume much time. Therefore delimitations must be made in order to make the thesis feasible within the limited time frame. The focus of this thesis will be on making an existing braking system faster in terms of reaction time of reaching the requested braking torque. 
 
 Wheel slip and \gls{abs} are both important factors while designing a modern brake, but this will not be implemented or considered in this thesis due to the fact that there is simply not enough time. Split mu, meaning when there is different friction coefficients acting on the the wheels, for example when one wheel travels over a slip of ice or gravel, will not be considered either. The parts that has been left out will be seen as future work that can be made to further improve the brakes on the vehicle. 
 
@@ -148,33 +147,37 @@ The methodology used for this project will be a case study of how to implement o
 
 \subsection{Tests}
 To evaluate the results of this thesis, tests will be made to compare how the system behaves with the old hardware and controller compared to the new system setup. The first type of test will consist of the \gls{rcv} standing still and then giving different torque requests of 5, 10, 20 and 40 Bar, five iterations for each pressure level, and then measuring the response time by plotting the results. 
-The other test will be braking performance in terms of reduced braking distance. These tests was done at test track 2 at Arlanda. Tests will be done at two different speeds, which are 15 and 30 km/h, and five tests will be done for each test case. [For these tests i need speed(both starting velocity and plot), pressure in system, ]
+The other test will be testing the braking performance in terms of braking distance. These tests was done at test track 2 at Arlanda. Tests was done with the help of Lars Svensson driving the \gls{rcv} and getting it up to speed, and at a certain point marked with traffic cones, brake the vehicle as hard as possible by requesting a predetermined torque from the mechanical brakes. The brake test was done at two different speeds, 15 and 30 km/h, for both the old setup and the new, three tests was done for each test case. 
 
 
 \section{Ethics}
-Brakes is one of the most vital part to the safety of a vehicle. Although this project handles the brakes while in autonomous drive mode, there will still be one or two people in the car monitoring the autonomous driving, whom might be susceptible to great risks if the brakes do not work. To keep the safety of the vehicle at acceptable levels there is a manual brake pedal that overrides the autonomous drive mode, and brakes the vehicle if necessary. This brake pedal is controlled by the person in the drivers seat, who has experience with the vehicle and is much aware of the risks and behavior of the car. 
+A reliable braking systems is one of the most vital functions to the safety of a vehicle. Without functioning brakes a vehicle can easily become a death trap for both people inside the vehicle as well as people in the immediate surroundings. 
+Although this project will be designing the braking system from an autonomous point of view, i.e. the braking will ultimately be controlled by a computer, there will still always be one or two people in the car monitoring the autonomous driving, whom might be susceptible to great risks if the brakes do not work. To keep risks at acceptable levels there is a manual brake pedal that can override the autonomous drive mode braking, and brakes the vehicle if necessary. This brake pedal is controlled by the person in the drivers seat, who shall have experience with the vehicle and is aware of the risks and behaviour of the car. 
 
-The vehicle is not legal to drive in regular traffic, and thus it is only driven in big closed off areas, such as a rented runway on Arlanda or in a closed off parking lot, where it is driven at low speeds of up to 45 km/h. The vehicle is also equipped with seat belts dimensioned for racing. 
-It is an electric car so the people around wont be exposed to any harmful exhausts. 
+The vehicle is not legal to drive in regular traffic, and thus it is only driven in big closed off areas, such as a runway on Arlanda or in a closed off parking lot, where it is driven at low speeds of up to 45 km/h. The vehicle is also equipped with seat belts dimensioned for racing. 
+Since the \gls{rcv} has an electric propulsion system, the people close to the vehicle will not be exposed to any harmful exhausts gases. 
 
 
 \section{Risk assessment}
-The risks that is involved with this project include the availability of the \gls{rcv} as well as that ordered hardware gets here on time. Concerning the availability of the \gls{rcv} is mainly concerning test. I do not know how to drive the vehicle or how the whole system works, so I will need help doing the tests. Since the testing phase and later parts of the thesis takes place during summer, I might need to change my plan to match peoples vacation. \newline
+The risks that is involved with this project concerns mainly the availability of the \gls{rcv} and that if new parts are needed that they get delivered on time. Since new parts can have rather long lead times, if they are not off the shelf items, they need to be ordered as soon as possible to not hold up the whole project. Concerning the availability of the \gls{rcv}, which is shared amongst many different projects, is that tests that are needed can be planned and executed without disturbing other students. If any mechanical work needs to be done to the vehicle, this needs to be planned as well, firstly to be sure that the vehicle is available and secondly so that it doesn't interfere with other tests or demonstrations etc.. 
+Anther risk is that conducting most tests on the vehicle requires two persons, one which will be driving the vehicle and one that controls the computer that will be running the test. Since the test phase and later parts of the thesis takes place during late summer, the planned tests need to take vacations of key people in the project into account. \newline
 
-Concerning the hardware, the actuators that are mounted on the vehicle is relatively slow, and the system will need to be upgraded to achieve a fast enough response time. The lead times in deliveries must be taken into considerations in the time plan.
-
-
-\section{Requirements?}
-
-- Speed of the actuators, in ms before request to actual torque meet.
-
-- Should it be optimized for torque meet, or regeneration? that is, should the regenerative me used as torquefill or as main brake? Probably torque fill.
-
-- Maximum negative acceleration / deceleration.
+%%%%%%%%%% I will probably skip this part?
+%\section{Requirements?}
+%
+%- Speed of the actuators, in ms before request to actual torque meet.
+%
+%- Should it be optimized for torque meet, or regeneration? that is, should the regenerative me used as torquefill or as main brake? Probably torque fill.
+%
+%- Maximum negative acceleration / deceleration.
+%
+%%%%%%%%%%%
 
 \section{Outline}
 What does the report discuss?
 This chapter discusses this, this other chapter discusses that...
+
+To be filled in later when most of chapters is done.
 
 
 %%%%%%%%%%%%%%%%%   BACKGROUND STUDY   %%%%%%%%%%%%%%%%
@@ -225,27 +228,30 @@ The brake blending algorithm will be a simple one where the regenerative brakes 
 
 \chapter{Implementation}
 
-This chapter presents how the brake is implemented by creating a model of it in Simulink using Simscape and describes the tuning of the controller. Information about the original system is presented, as well as why and how new actuators where implemented and used by the friction brake system. New mounts had to be produced as well to fit the new actuators, and the designing and manufacturing of those are presented too. 
+This chapter presents how the braking system is implemented by creating a model of it in Simulink using Simscape and describes the tuning of the controller. Information about the original system is presented, as well as why and how new actuators where implemented and used by the friction brake system. New mounts had to be designed and produced as well to fit the new actuators, and this process is presented too. \\
 
-\section{Original setup?}
-The friction braking system that was used in the \gls{rcv} in the beginning of this thesis project is a electro hydraulic brake system. The braking system is made up of two linear actuators which are controlled by current from an [escon??] driver, which in turn get its signal from a ---dSpace controller--- (write more about this), which is the main computer in the \gls{rcv}. The linear actuators acts on hydraulic cylinders that transfers the force to the calipers on each wheel, where the force acts on the rotors which brakes the vehicle. The reason there are two linear actuators is due to the fact that there are two completely separated friction braking systems in the vehicle, one system that acts on the two front wheels, and the other that acts on the two rear wheels. This is done to incorporate a higher level of safety, whereas if one of the systems breaks down, there will still be braking abilities on two of the four wheels. \newline
+% Describe how measuremets of stopping distance was made? No, this was done in Method section. 
+
+
+\section{Original setup/system hardware setup}
+The friction braking system that was used in the \gls{rcv} is a electro hydraulic braking system. The braking system is made up of two linear actuators which are controlled by current from a driver, which in turn get its signal from a dSpace controller, the main computer in the \gls{rcv}. The linear actuators acts on hydraulic cylinders that transfers the force to the calipers on each wheel, where the force acts on the rotors which brakes the vehicle. The reason there are two linear actuators is due to the fact that there are two completely separated friction braking systems in the vehicle, one system that acts on the two front wheels, and the other that acts on the two rear wheels. This is done to incorporate a higher level of safety, whereas if one of the systems breaks down, there will still be braking abilities on two of the four wheels. \newline
 
 There is also a manually operated braking pedal that acts on the hydraulic system, controlling the brakes on all four wheels. This braking pedal which is mechanically connected directly to two hydraulic cylinders is located between the calipers and the hydraulic cylinders connected to the linear actuators. If the manual brake pedal is pressed, the autonomous braking system is mechanically disconnected, and all braking is controlled by the driver. \newline
 
 [Picture of brake system setup]
 
 \section{Brake actuators and new mounts}
-At the start of the thesis project the idea was to use the original hardware setup that existed in the \gls{rcv}, but after testing and reading up on the original actuators a decision was made to change to a new set of actuators that are faster and stronger. 
+At the start of this thesis project the plan was to use the original hardware setup that existed in the \gls{rcv}. However, it was soon realised that the actuators together with how they were assembled was a large limiting factor in the speed of the braking system. A decision was made to change to a new set of actuators that are both faster as well as stronger. New actuators led to the mounts required a re-design because of the different form factor of compared to the old actuators. 
 
 \subsection{Original actuators and lever arm}
-The original actuators, named Electrak 1, was of an acme screw type, which involves a lot of dynamic friction where up to 80\% of the input power can be dissipated in friction losses [SOURCE]. This means that the motor within the actuator has to work hard to move the rod in each direction. The static friction is also very high, which raises a problem when it come to the control of the actuator. The actuator requires a high current to start moving to overcome the static friction, and when it has overcome that static friction the need of current to keep the motion going is not as high. Thus, the steps in current that is needed to make the actuator move offers a problem in controlling it, since it is hard to control with the step in current that is needed and very small movements in the actuator rod can have large effects to the pressure of the hydraulic system. \\
+The original actuators, named Electrak 1, was of an acme screw type, which involves a lot of dynamic friction where up to 80\% of the input power is dissipated in friction losses [SOURCE]. This means that the motor within the actuator has to work hard to move the rod in each direction. The static friction is also very high, which raises a problem when it come to the control of the actuator. The actuator requires a high current to start moving to overcome the static friction, and when it has overcome that static friction the need of current to keep the motion going is not as high. Thus, the steps in current that is needed to make the actuator move offers a problem in controlling it, since it is hard to control with the step in current that is needed and very small movements in the actuator rod can have large effects to the pressure of the hydraulic system. \\
 
 However, one feature that could be useful in the acme leadscrew actuators is that the configuration is, within certain forces, self locking. They function in such a way that it moves easily if force is applied from one direction , while if it is applied in the other direction it has to be very high in order for the piston to move. Thus, they can be used as parking brake when the vehicle is turned of, if no other means of parking brake is present. Since the ballscrew actuator has lower internal friction, it cannot be relied upon as parking brake. Though, a parking brake can easily be realized by other means, such as a lever  connected to the manual parking brake etc., and is therefore not included in the scope of this thesis\\
 
 The hardware setup, in terms of mounts and lever arm, that was originally mounted on the \gls{rcv} needed revision as well, especially the lever arms that transferred the force from the actuator to the hydraulic cylinder. As can be seen in picture [SOURCE TO PICTURE], there is a lever arm that transfers the force from actuator to hydraulic cylinder. This arm is over dimensioned, the lever arm is to long. Tests showed that the acme screw actuators reaches their stroke limit when the request for braking torque reaches a certain point, which means that the actuators is able to provide higher force than  originally is possible, hence, the lever arms can be shortened in order to make the system faster while keeping the amount of force that can be delivered. 
 
 \subsection{New actuators}
-New actuators was needed to make the system faster, characteristics such as low internal friction and fast linear motion speed are desirable. Concerning the friction, a change from acme screw to ball screw actuators had to be made since ball screw actuators incorporate drastically lower friction that acme screw [SOURCE?MAYBE??]. \gls{itrl} has good contacts with Thomson Linear, which is a large linear motion supplier in Sweden, a decision was made to order one of their actuators due to decent lead times and prices, as well as the possibility of invoicing. Thomson Linear offers many different ball screw actuators, but the decision fell on the Max Jac with a maximum force of 800 Newton and a speed of 30 millimeters per second at full load. Compared to the old actuators, the Electrak 1, which has a maximum force of 225 Newton and a speed of 33 millimeters per second at full load, the new one are much stronger, albeit slightly slower at full load. What is interesting though, is not the speed at full load, but the no-load speed since the brake actuation in the beginning requires little force but high speeds, which is 60 millimeters per second for the Max Jac and only 45 millimeters per second for the Electrak 1. The datasheet of the Max Jac can be found in appendix \ref{appendix:Max_Jac} and the datasheet of the Electrak 1 can be found in appendix \ref{appendix:Electrak_1}.\\
+New actuators was needed to make the system faster, characteristics such as low internal friction and fast linear motion speed are desirable. Concerning the friction, a change from acme screw to ball screw actuators had to be made since ball screw actuators incorporate drastically lower friction then an acme screw [SOURCE?MAYBE??]. \gls{itrl} has good contacts with Thomson Linear, which is a large linear motion supplier in Sweden, a decision was made to order one of their actuators due to decent lead times and prices, as well as the possibility of invoicing. Thomson Linear offers many different ball screw actuators, but the decision fell on the Max Jac with a maximum force of 800 Newton and a speed of 30 millimeters per second at full load. Compared to the old actuators, the Electrak 1, which has a maximum force of 225 Newton and a speed of 33 millimeters per second at full load, the new one are much stronger, albeit slightly slower at full load. What is interesting though, is not the speed at full load, but the no-load speed since the brake actuation in the beginning requires little force but high speeds, which is 60 millimeters per second for the Max Jac and only 45 millimeters per second for the Electrak 1. The datasheet of the Max Jac can be found in appendix \ref{appendix:Max_Jac} and the datasheet of the Electrak 1 can be found in appendix \ref{appendix:Electrak_1}.\\
 
 To be sure that the new actuator can deliver enough force, the maximum braking force for the whole vehicle must be calculated. The highest needed braking torque on each wheel was calculated with respect to the maximum negative acceleration that is stated in the requirements. If the acceleration is known, as well as the mass of the vehicle the total force that needs to act on the vehicle can be calculated with Newtons second law, 
 \begin{equation}
@@ -266,9 +272,9 @@ The step from torque to pressure in hydraulic system was made earlier when the o
 
 \subsection{Mounts for new actuators}
 
-A decision was made to change the original actuators to a pair of new ones. The new actuators are of ball screw type, which incorporate lower friction, both static and dynamic. This will help a lot when constructing the controller for the brakes, since we wont have as high step in the current needed to start moving the actuator rod. \\
+During this thesis a decision was made to change the original actuators to a pair of new ones with different dimensions. The new actuators was of ball screw type, which incorporate lower friction, both static and dynamic. This will help a lot when constructing the controller for the brakes, since we won't have as high step in the current needed to start moving the actuator rod. \\
 
-New mounts had to be made to fit the new actuators, which are slightly larger than the original lead screw actuators. These mounts where modeled in the 3D CAD program Solid Edge, and can be seen in \ref{fig:CAD_Actuator_mount} [AND MORE]. These parts where then manufactured by water jet cutting by the machine department at \gls{kth}. The parts that where constructed where new mounts to the actuators, mounts to the hydraulic cylinders as well as a new connection between the actuator and lever arm. The hydraulic cylinders has not been changed during the thesis project, but since the actuator mounts has been made wider as the actuators are wider, the cylinders had to be wider apart as well to get everything to line up properly. \\
+New mounts had to be made to fit the new actuators, which are slightly larger than the original lead screw actuators. These mounts where modeled in the 3D CAD program Solid Edge, and can be seen in Figure \ref{fig:CAD_Actuator_mount} and Figure \ref{fig:CAD_Hydraulic_cylinder_mount}. These parts where then manufactured by water jet cutting by the machine design department at \gls{kth}. The parts that were constructed were new mounts to the actuators, mounts to the hydraulic cylinders as well as a new connection between the actuator and lever arm. The hydraulic cylinders has not been changed during the thesis project, but since the actuator mounts has been made wider as the actuators are wider, the cylinders had to be wider apart as well to get everything to line up properly. \\
 
 The connection between the actuator and lever arm was made with regards to the possibility to change the position of the connection on the lever arm, to be able to change the leverage. The connection consists of a T-shaped part that is mounted on the actuator while also clamping on to the lever arm with the help of another piece of metal with holes drilled, two screws and bolts. \\
 
@@ -293,29 +299,34 @@ The connection between the actuator and lever arm was made with regards to the p
 The development of the controller was made using \gls{mbd}, where the model was made using the graphical programming environment Simulink. Primarily the tool box Simscape was used, which is a tool box useful while designing physical systems. The model was then VERIFIED, and used while tuning the brake controller. 
 
 \subsection{Simscape model and \gls{mbd}}
-The plant model was constructed in Simulink, mostly using the Simscape toolbox. The plant is made up of a few different parts which are the hydraulic system, the brake calipers, electric actuators and mechanical force translation such as lever arm. All of these parts are made up of Simscape blocks that are tuned by measured or calculated values as well as values derived from data sheets. The Max Jac linear actuator is made up of three primary internal components, which are the electric \gls{dc} motor, a gear box and the ball screw. To acquire all the constants of the motor, the gearing of the sprockets and ball screw one of the actuators where dismounted, and all necessary parts were measured and calculated to get all required information. information concerning the hydraulic system, exact information has been difficult to acquire due to the fact that it is mounted on the vehicle and practically impossible to remove just for measurements, due to the fact that it is used daily by other people, and would take too much time to dismount and mount again. Therefore some measurements was made on the outside of the calipers, and an inner volume of the cylinder and diameter of the piston was then estimated upon those measurements. for the master cylinder the measurements is more exact due to the fact that there were a spare cylinder in the workshop that measurements could be done upon. The lever arms where measured while still mounted on the vehicle as well. 
+The plant model was constructed in Simulink, mostly using the Simscape toolbox. The plant is made up of a few different parts which are the hydraulic system, the brake calipers, electric actuators and mechanical force translation such as lever arm. All of these parts are made up of Simscape blocks that are tuned by either measured or calculated values as well as values derived from data sheets. The Max Jac linear actuator is made up of three primary internal components, which are the electric \gls{dc} motor, a gear box and the ball screw. To acquire all the constants of the motor, the gearing of the sprockets and ball screw one of the actuators where dismantled, and all necessary parts were measured and calculated to get all required information. 
+
+Information concerning the hydraulic system, exact information has been difficult to acquire due to the fact that it is mounted on the vehicle and practically impossible to remove just for measurements, due to the fact that it is used daily by other students and researchers, and would take too much time to dismount, measure and then mount again. No datasheets or drawings was to be found either. Therefore some measurements was made on the outside of the calipers, and an inner volume of the cylinder and diameter of the piston was then estimated upon those measurements. For the master cylinder the measurements is more exact due to the fact that there were a spare cylinder in the workshop that measurements could be done upon. The lever arms where measured while still mounted on the vehicle as well. \\
 
 The choice of using \gls{mbd} was due to the fact that it is an easy and fast. This way of solving a problem by making a software plant model and designing the controller from there is called \gls{mbd}, which has become a very popular method of solving engineering problems, since when a plant model has been made it is easy, fast and cheap to develop and improve the controls\cite{2010-01-1999}. 
 
 \subsection{Verification of simscape model}
-When the simscape model was done the plant need to be verified before the of the controlled is done. The verification was made by running the physical system with the new actuators and all necessary hard ware mounted at certain current requests and the compare the results with from the same cases of current request on the plant model. The results can be seen in [FIGURE]. \\
+When the complete model in Simulink was done it needed to be verified before tuning of the controller could be done. The verification was made by running the physical system with the new actuators and all necessary hardware mounted at certain current requests and then compare the results with from the same cases of current request on the plant model. The results can be seen in [FIGURE]. \\
 
-Discuss the Lineaarization work?\\
+
 
 The verification was done at certains currents fed into the actuators, these where 500, 800, 1000 and 1500 mA. This corresponded to 12, 35, 48 and 68 Bar. While running the system will not go above 20 Bar, but because of the internal coulomb friction the actuator did not move until about 400-500 mA where applied, these levels were used to verify the model.\\
 
-When the rear brakes where applied the pressure sank in the front, which means the system in nit that exact, and is why the verification can be accepted. \\
+When the rear brakes were applied the pressure sank in the front, which means the system in not that exact, and is why the verification can be accepted. \\
 
 No way to implement coulomb friction, which is a big part in these acme and lead screws. This is (probably) why the validation becomes sort of bad.\\
 
 
 
 \subsection{Tuning controller}
-The \gls{pid} controlled was tuned using pole placement design. \\
+An attempt was made to tune the \gls{pi}-controller using pole placement. The braking system model was linearised at around 2 Bar, and then the system was linearized to a second order transfer function. This simplified system was then used when tuning the controller using pole placement. However, after several tries with poles placed in different locations in the left half plane, no useful results had been acquired. 
 
-A feed forward was also incorporated\\
+Since the tuning of the controller with the help of pole placement did not give any useful values, this method was abandoned, and instead a trial and error method was used in the existing \gls{pi}-controller. Values on \begin{math} K_{p}\end{math} and \begin{math} K_{i} \end{math} was based on the values that worked for the original design with the old actuators.\\ 
 
-Something about anti windup\\
+
+The values that was deemed best during the tests at Arlanda was \begin{math} K_{p}=50,K_i=10 \end{math}. The original controller included a feed forward part, which was tuned to  \begin{math} FF = 60 \end{math}. 
+An anti wind-up function was implemented in the \gls{rcv} main simulink model from the start, and no changes was made to this function, since no evidence of wind-up did occur during tuning. \\
+
 
 %%%%%%%%%%%%%   RESULTS   %%%%%%%%%%%%%%%%%%%%
 
@@ -327,7 +338,122 @@ This chapter presents the results from the tests that was made in this thesis.
 This section will show the plots of tests while \gls{rcv} standing still. 
 
 \section{Brake distances}
-This section will present result from brake distance tests. Figure this to this shows braking distance from a speed of 15 km/h and figure this to that shows braking distance from a speed of 30 km/h.
+This section presents result from brake distance tests. Figure \ref{fig:New_15kph_test1} to \ref{fig:Old_30kph_test3} shows plots of braking tests with both new and old actuators from 15 and 30 km/h. 
+The braking distance from Figure \ref{fig:New_15kph_test1} to \ref{fig:Old_30kph_test3} is compiled in to Table \ref{tab:table1}.
+
+
+\begin{figure}[h]
+\centering
+\includegraphics[width=0.8\textwidth]{New_15kph_test1}
+\caption{New actuator, 15 km/h, test 1}
+\label{fig:New_15kph_test1}
+\end{figure}
+
+\begin{figure}[h]
+\centering
+\includegraphics[width=0.8\textwidth]{New_15kph_test2}
+\caption{New actuator, 15 km/h, test 2}
+\label{fig:New_15kph_test2}
+\end{figure}
+
+\begin{figure}[h]
+\centering
+\includegraphics[width=0.8\textwidth]{New_15kph_test3}
+\caption{New actuator, 15 km/h, test 3}
+\label{fig:New_15kph_test3}
+\end{figure}
+
+\begin{figure}[h]
+\centering
+\includegraphics[width=0.8\textwidth]{New_30kph_test1}
+\caption{New actuator, 30 km/h, test 1}
+\label{fig:New_30kph_test1}
+\end{figure}
+
+\begin{figure}[h]
+\centering
+\includegraphics[width=0.8\textwidth]{New_30kph_test2}
+\caption{New actuator, 30 km/h, test 2}
+\label{fig:New_30kph_test2}
+\end{figure}
+
+\begin{figure}[h]
+\centering
+\includegraphics[width=0.8\textwidth]{New_30kph_test3}
+\caption{New actuator, 30 km/h, test 3}
+\label{fig:New_30kph_test3}
+\end{figure}
+
+\begin{figure}[h]
+\centering
+\includegraphics[width=0.8\textwidth]{Old_15kph_test1}
+\caption{Old actuator, 15 km/h, test 1}
+\label{fig:Old_15kph_test1}
+\end{figure}
+
+\begin{figure}[h]
+\centering
+\includegraphics[width=0.8\textwidth]{Old_15kph_test2}
+\caption{Old actuator, 15 km/h, test 2}
+\label{fig:Old_15kph_test2}
+\end{figure}
+
+\begin{figure}[h]
+\centering
+\includegraphics[width=0.8\textwidth]{Old_15kph_test3}
+\caption{Old actuator, 15 km/h, test 3}
+\label{fig:Old_15kph_test3}
+\end{figure}
+
+\begin{figure}[h]
+\centering
+\includegraphics[width=0.8\textwidth]{Old_30kph_test1}
+\caption{Old actuator, 30 km/h, test 1}
+\label{fig:Old_30kph_test1}
+\end{figure}
+
+\begin{figure}[h]
+\centering
+\includegraphics[width=0.8\textwidth]{Old_30kph_test2}
+\caption{Old actuator, 30 km/h, test 2}
+\label{fig:Old_30kph_test2}
+\end{figure}
+
+\begin{figure}[h]
+\centering
+\includegraphics[width=0.8\textwidth]{Old_30kph_test3}
+\caption{Old actuator, 30 km/h, test 3}
+\label{fig:Old_30kph_test3}
+\end{figure}
+
+\begin{table}[hp]
+  \begin{center}
+    \caption{Stopping distance with both new and old actuators tested from two different speeds.}
+    \label{tab:table1}
+    \begin{tabular}{  c | c | c | c } % <- Alignments: columns centered, with vertical lines in between
+      \textbf{Test} & \textbf{Actuator} & \textbf{Driving speed}& \textbf{Stopping distance}\\
+      no. &   & [km/h] & [m] \\
+      \hline
+      1 & New & 15 & 3.5 \\
+      2 & New & 15 & 3,2 \\
+      3 & New & 15 & 3,4 \\
+      \hline
+      4 & New & 30 & 9,8 \\
+      5 & New & 30 & 9,4 \\
+      6 & New & 30 & 9,1 \\
+      \hline
+      7 & Old & 15 & 6,5 \\
+      8 & Old & 15 & 6,6 \\
+      9 & Old & 15 & 6,4 \\
+      \hline
+      10 & Old & 30 & 14,7 \\
+      11 & Old & 30 & 15,2 \\
+      12 & Old & 30 & 15,2 \\
+      
+    \end{tabular}
+  \end{center}
+\end{table}
+
 
 
 

@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.19 (MiKTeX 2.9.6930 64-bit) (preloaded format=pdflatex 2019.3.22)  12 AUG 2019 11:32
+This is pdfTeX, Version 3.14159265-2.6-1.40.19 (MiKTeX 2.9.6930 64-bit) (preloaded format=pdflatex 2019.3.22)  28 MAY 2020 13:37
 entering extended mode
 **./BrakeController.tex
 (BrakeController.tex
@@ -1626,7 +1626,7 @@ Package epstopdf Info: Source file: <kth_svv.eps>
 f kth_svv.eps>
 (epstopdf)             \includegraphics on input line 78.
 Package epstopdf Info: Output file is already uptodate.
-<kth_svv-eps-converted-to.pdf, id=174, 370.38374pt x 370.38374pt>
+<kth_svv-eps-converted-to.pdf, id=170, 370.38374pt x 370.38374pt>
 File: kth_svv-eps-converted-to.pdf Graphic file (type pdf)
 <use kth_svv-eps-converted-to.pdf>
 Package pdftex.def Info: kth_svv-eps-converted-to.pdf  used on input line 78.
@@ -1723,7 +1723,7 @@ l.106 \clearpage
 er (name{page.}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.37 ...rnumberline {7}Future work}{21}{chapter.7}
+l.36 ...rnumberline {7}Future work}{29}{chapter.7}
                                                   % [8
 
 
@@ -1753,34 +1753,30 @@ been already used, duplicate ignored
 l.118 \pagestyle
                 {newchap} [12
 
+] [1
+
 ]
-LaTeX Font Info:    Try loading font information for TS1+lmr on input line 135.
+LaTeX Font Info:    Try loading font information for TS1+lmr on input line 134.
 
 
 ("C:\Users\Richurd\AppData\Local\Programs\MiKTeX 2.9\tex/latex/lm\ts1lmr.fd"
 File: ts1lmr.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
-Underfull \vbox (badness 1845) has occurred while \output is active []
-
- [1
-
-]
 [2]
-Underfull \hbox (badness 10000) in paragraph at lines 162--163
+Underfull \hbox (badness 10000) in paragraph at lines 162--164
 
  []
 
-[3] [4
 
-]
+Underfull \vbox (badness 2197) has occurred while \output is active []
+
+ [3]
+[4]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [5]
-Underfull \hbox (badness 10000) in paragraph at lines 198--199
+ [5
 
- []
-
-
+]
 Underfull \hbox (badness 10000) in paragraph at lines 201--202
 
  []
@@ -1791,12 +1787,17 @@ Underfull \hbox (badness 10000) in paragraph at lines 204--205
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 208--209
+Underfull \hbox (badness 10000) in paragraph at lines 207--208
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 210--212
+Underfull \hbox (badness 10000) in paragraph at lines 211--212
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 213--215
 
  []
 
@@ -1804,7 +1805,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 210--212
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [6]
-Underfull \hbox (badness 10000) in paragraph at lines 213--214
+Underfull \hbox (badness 10000) in paragraph at lines 216--217
 
  []
 
@@ -1816,58 +1817,72 @@ Underfull \hbox (badness 10000) in paragraph at lines 231--232
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 233--234
-
- []
-
-[9]
-Underfull \hbox (badness 10000) in paragraph at lines 241--242
+Underfull \hbox (badness 10000) in paragraph at lines 237--238
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 243--244
+Underfull \hbox (badness 10000) in paragraph at lines 239--240
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 248--249
+Underfull \vbox (badness 4995) has occurred while \output is active []
+
+ [9]
+Underfull \hbox (badness 10000) in paragraph at lines 247--248
 
  []
 
 
-Underfull \vbox (badness 10000) has occurred while \output is active []
+Underfull \hbox (badness 10000) in paragraph at lines 249--250
+
+ []
+
+
+Overfull \hbox (8.02301pt too wide) in paragraph at lines 254--255
+\T1/lmr/m/n/10.95 a-tors in-cor-po-rate dras-ti-cally lower fric-tion then an a
+cme screw [SOURCE?MAYBE??].
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 254--255
+
+ []
+
+
+Underfull \vbox (badness 2884) has occurred while \output is active []
 
  [10]
-Underfull \hbox (badness 10000) in paragraph at lines 261--263
+Underfull \hbox (badness 10000) in paragraph at lines 267--269
 
  []
 
 [11]
-Underfull \hbox (badness 10000) in paragraph at lines 269--270
+Underfull \hbox (badness 10000) in paragraph at lines 275--276
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 271--272
+Underfull \hbox (badness 10000) in paragraph at lines 277--278
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 273--274
+Underfull \hbox (badness 10000) in paragraph at lines 279--280
 
  []
 
-<images/Actuator_mount.png, id=346, 416.15475pt x 359.54324pt>
+<images/Actuator_mount.png, id=369, 416.15475pt x 359.54324pt>
 File: images/Actuator_mount.png Graphic file (type png)
 <use images/Actuator_mount.png>
-Package pdftex.def Info: images/Actuator_mount.png  used on input line 277.
+Package pdftex.def Info: images/Actuator_mount.png  used on input line 283.
 (pdftex.def)             Requested size: 198.0pt x 171.07008pt.
-<images/Hydraulic_cylinder_mount.png, id=347, 518.53725pt x 381.8265pt>
+<images/Hydraulic_cylinder_mount.png, id=370, 518.53725pt x 381.8265pt>
 File: images/Hydraulic_cylinder_mount.png Graphic file (type png)
 <use images/Hydraulic_cylinder_mount.png>
 Package pdftex.def Info: images/Hydraulic_cylinder_mount.png  used on input lin
-e 284.
+e 290.
 (pdftex.def)             Requested size: 198.0pt x 145.79471pt.
 
 LaTeX Warning: `h' float specifier changed to `ht'.
@@ -1875,68 +1890,168 @@ LaTeX Warning: `h' float specifier changed to `ht'.
 [12 <./images/Actuator_mount.png>]
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\gls' on input line 295.
+(hyperref)                removing `\gls' on input line 301.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 304--305
+
+ []
 
 [13 <./images/Hydraulic_cylinder_mount.png>]
-Underfull \hbox (badness 10000) in paragraph at lines 301--302
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 303--304
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 305--306
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 307--308
-
- []
-
-
 Underfull \hbox (badness 10000) in paragraph at lines 309--310
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 314--315
+Underfull \hbox (badness 10000) in paragraph at lines 313--314
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 316--317
+Underfull \hbox (badness 10000) in paragraph at lines 315--316
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 318--319
+Underfull \hbox (badness 10000) in paragraph at lines 317--318
 
  []
 
-[14] [15
 
-] [16
+Underfull \hbox (badness 10000) in paragraph at lines 324--325
 
-] [17] [18
+ []
 
-] [19] [20
 
-] (BrakeController.bbl [21] [22
+Underfull \hbox (badness 10000) in paragraph at lines 327--329
+
+ []
+
+[14] [15] [16
+
+]
+<images/New_15kph_test1.png, id=401, 710.655pt x 565.36218pt>
+File: images/New_15kph_test1.png Graphic file (type png)
+<use images/New_15kph_test1.png>
+Package pdftex.def Info: images/New_15kph_test1.png  used on input line 347.
+(pdftex.def)             Requested size: 316.80121pt x 252.03827pt.
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+<images/New_15kph_test2.png, id=402, 710.655pt x 568.37344pt>
+File: images/New_15kph_test2.png Graphic file (type png)
+<use images/New_15kph_test2.png>
+Package pdftex.def Info: images/New_15kph_test2.png  used on input line 354.
+(pdftex.def)             Requested size: 316.80121pt x 253.38069pt.
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+<images/New_15kph_test3.png, id=403, 710.655pt x 567.62062pt>
+File: images/New_15kph_test3.png Graphic file (type png)
+<use images/New_15kph_test3.png>
+Package pdftex.def Info: images/New_15kph_test3.png  used on input line 361.
+(pdftex.def)             Requested size: 316.80121pt x 253.04509pt.
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+<images/New_30kph_test1.png, id=404, 710.655pt x 565.36218pt>
+File: images/New_30kph_test1.png Graphic file (type png)
+<use images/New_30kph_test1.png>
+Package pdftex.def Info: images/New_30kph_test1.png  used on input line 368.
+(pdftex.def)             Requested size: 316.80121pt x 252.03827pt.
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+<images/New_30kph_test2.png, id=405, 710.655pt x 568.37344pt>
+File: images/New_30kph_test2.png Graphic file (type png)
+<use images/New_30kph_test2.png>
+Package pdftex.def Info: images/New_30kph_test2.png  used on input line 375.
+(pdftex.def)             Requested size: 316.80121pt x 253.38069pt.
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+<images/New_30kph_test3.png, id=406, 710.655pt x 566.86781pt>
+File: images/New_30kph_test3.png Graphic file (type png)
+<use images/New_30kph_test3.png>
+Package pdftex.def Info: images/New_30kph_test3.png  used on input line 382.
+(pdftex.def)             Requested size: 316.80121pt x 252.70949pt.
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+<images/Old_15kph_test1.png, id=407, 710.655pt x 569.12625pt>
+File: images/Old_15kph_test1.png Graphic file (type png)
+<use images/Old_15kph_test1.png>
+Package pdftex.def Info: images/Old_15kph_test1.png  used on input line 389.
+(pdftex.def)             Requested size: 316.80121pt x 253.7163pt.
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+<images/Old_15kph_test2.png, id=408, 710.655pt x 568.37344pt>
+File: images/Old_15kph_test2.png Graphic file (type png)
+<use images/Old_15kph_test2.png>
+Package pdftex.def Info: images/Old_15kph_test2.png  used on input line 396.
+(pdftex.def)             Requested size: 316.80121pt x 253.38069pt.
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+<images/Old_15kph_test3.png, id=409, 710.655pt x 570.63188pt>
+File: images/Old_15kph_test3.png Graphic file (type png)
+<use images/Old_15kph_test3.png>
+Package pdftex.def Info: images/Old_15kph_test3.png  used on input line 403.
+(pdftex.def)             Requested size: 316.80121pt x 254.38751pt.
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+<images/Old_30kph_test1.png, id=410, 710.655pt x 568.37344pt>
+File: images/Old_30kph_test1.png Graphic file (type png)
+<use images/Old_30kph_test1.png>
+Package pdftex.def Info: images/Old_30kph_test1.png  used on input line 410.
+(pdftex.def)             Requested size: 316.80121pt x 253.38069pt.
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+<images/Old_30kph_test2.png, id=411, 710.655pt x 569.12625pt>
+File: images/Old_30kph_test2.png Graphic file (type png)
+<use images/Old_30kph_test2.png>
+Package pdftex.def Info: images/Old_30kph_test2.png  used on input line 417.
+(pdftex.def)             Requested size: 316.80121pt x 253.7163pt.
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+<images/Old_30kph_test3.png, id=412, 710.655pt x 569.12625pt>
+File: images/Old_30kph_test3.png Graphic file (type png)
+<use images/Old_30kph_test3.png>
+Package pdftex.def Info: images/Old_30kph_test3.png  used on input line 424.
+(pdftex.def)             Requested size: 316.80121pt x 253.7163pt.
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+[17] [18 <./images/New_15kph_test1.png (PNG copy)> <./images/New_15kph_test2.pn
+g (PNG copy)>] [19 <./images/New_15kph_test3.png (PNG copy)> <./images/New_30kp
+h_test1.png (PNG copy)>] [20 <./images/New_30kph_test2.png (PNG copy)> <./image
+s/New_30kph_test3.png (PNG copy)>] [21 <./images/Old_15kph_test1.png (PNG copy)
+> <./images/Old_15kph_test2.png (PNG copy)>] [22 <./images/Old_15kph_test3.png 
+(PNG copy)> <./images/Old_30kph_test1.png (PNG copy)>] [23 <./images/Old_30kph_
+test2.png (PNG copy)> <./images/Old_30kph_test3.png (PNG copy)>] [24
+
+] [25]
+[26
+
+] [27] [28
+
+] (BrakeController.bbl [29] [30
 
 ]
 bibitemlist
-[23]) [24]
+[31]) [32]
 
 pdfTeX warning: pdflatex (file ./Max_Jac.pdf): PDF inclusion: found PDF version
  <1.7>, but at most version <1.5> allowed
-<Max_Jac.pdf, id=409, 614.295pt x 794.97pt>
+<Max_Jac.pdf, id=483, 614.295pt x 794.97pt>
 File: Max_Jac.pdf Graphic file (type pdf)
 <use Max_Jac.pdf>
-Package pdftex.def Info: Max_Jac.pdf  used on input line 357.
+Package pdftex.def Info: Max_Jac.pdf  used on input line 483.
 (pdftex.def)             Requested size: 614.29349pt x 794.96806pt.
 
 
@@ -1944,7 +2059,7 @@ pdfTeX warning: pdflatex (file ./Max_Jac.pdf): PDF inclusion: found PDF version
  <1.7>, but at most version <1.5> allowed
 File: Max_Jac.pdf Graphic file (type pdf)
 <use Max_Jac.pdf>
-Package pdftex.def Info: Max_Jac.pdf  used on input line 357.
+Package pdftex.def Info: Max_Jac.pdf  used on input line 483.
 (pdftex.def)             Requested size: 614.29349pt x 794.96806pt.
 
 
@@ -1954,57 +2069,57 @@ pdfTeX warning: pdflatex (file ./Max_Jac.pdf): PDF inclusion: found PDF version
 
 pdfTeX warning: pdflatex (file ./Max_Jac.pdf): PDF inclusion: found PDF version
  <1.7>, but at most version <1.5> allowed
-<Max_Jac.pdf, id=412, page=1, 614.295pt x 794.97pt>
+<Max_Jac.pdf, id=486, page=1, 614.295pt x 794.97pt>
 File: Max_Jac.pdf Graphic file (type pdf)
 <use Max_Jac.pdf, page 1>
-Package pdftex.def Info: Max_Jac.pdf , page1 used on input line 357.
+Package pdftex.def Info: Max_Jac.pdf , page1 used on input line 483.
 (pdftex.def)             Requested size: 614.29349pt x 794.96806pt.
 File: Max_Jac.pdf Graphic file (type pdf)
 <use Max_Jac.pdf, page 1>
-Package pdftex.def Info: Max_Jac.pdf , page1 used on input line 357.
+Package pdftex.def Info: Max_Jac.pdf , page1 used on input line 483.
 (pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
-[25
+[33
 
 ]
 File: Max_Jac.pdf Graphic file (type pdf)
 <use Max_Jac.pdf, page 1>
-Package pdftex.def Info: Max_Jac.pdf , page1 used on input line 357.
+Package pdftex.def Info: Max_Jac.pdf , page1 used on input line 483.
 (pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
 File: Max_Jac.pdf Graphic file (type pdf)
 <use Max_Jac.pdf, page 1>
-Package pdftex.def Info: Max_Jac.pdf , page1 used on input line 357.
+Package pdftex.def Info: Max_Jac.pdf , page1 used on input line 483.
 (pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
 File: Max_Jac.pdf Graphic file (type pdf)
 <use Max_Jac.pdf, page 1>
-Package pdftex.def Info: Max_Jac.pdf , page1 used on input line 357.
+Package pdftex.def Info: Max_Jac.pdf , page1 used on input line 483.
 (pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
- [26 <./Max_Jac.pdf>]
+ [34 <./Max_Jac.pdf>]
 
 pdfTeX warning: pdflatex (file ./Max_Jac.pdf): PDF inclusion: found PDF version
  <1.7>, but at most version <1.5> allowed
-<Max_Jac.pdf, id=456, page=2, 614.295pt x 794.97pt>
+<Max_Jac.pdf, id=529, page=2, 614.295pt x 794.97pt>
 File: Max_Jac.pdf Graphic file (type pdf)
 <use Max_Jac.pdf, page 2>
-Package pdftex.def Info: Max_Jac.pdf , page2 used on input line 357.
+Package pdftex.def Info: Max_Jac.pdf , page2 used on input line 483.
 (pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
 File: Max_Jac.pdf Graphic file (type pdf)
 <use Max_Jac.pdf, page 2>
-Package pdftex.def Info: Max_Jac.pdf , page2 used on input line 357.
+Package pdftex.def Info: Max_Jac.pdf , page2 used on input line 483.
 (pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
 File: Max_Jac.pdf Graphic file (type pdf)
 <use Max_Jac.pdf, page 2>
-Package pdftex.def Info: Max_Jac.pdf , page2 used on input line 357.
+Package pdftex.def Info: Max_Jac.pdf , page2 used on input line 483.
 (pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
-[27 <./Max_Jac.pdf>] [28
+[35 <./Max_Jac.pdf>] [36
 
 ]
 
 pdfTeX warning: pdflatex (file ./Electrac_1.pdf): PDF inclusion: found PDF vers
 ion <1.7>, but at most version <1.5> allowed
-<Electrac_1.pdf, id=471, 597.50829pt x 845.0471pt>
+<Electrac_1.pdf, id=544, 597.50829pt x 845.0471pt>
 File: Electrac_1.pdf Graphic file (type pdf)
 <use Electrac_1.pdf>
-Package pdftex.def Info: Electrac_1.pdf  used on input line 360.
+Package pdftex.def Info: Electrac_1.pdf  used on input line 486.
 (pdftex.def)             Requested size: 597.50682pt x 845.04504pt.
 
 
@@ -2012,7 +2127,7 @@ pdfTeX warning: pdflatex (file ./Electrac_1.pdf): PDF inclusion: found PDF vers
 ion <1.7>, but at most version <1.5> allowed
 File: Electrac_1.pdf Graphic file (type pdf)
 <use Electrac_1.pdf>
-Package pdftex.def Info: Electrac_1.pdf  used on input line 360.
+Package pdftex.def Info: Electrac_1.pdf  used on input line 486.
 (pdftex.def)             Requested size: 597.50682pt x 845.04504pt.
 
 
@@ -2022,46 +2137,46 @@ ion <1.7>, but at most version <1.5> allowed
 
 pdfTeX warning: pdflatex (file ./Electrac_1.pdf): PDF inclusion: found PDF vers
 ion <1.7>, but at most version <1.5> allowed
-<Electrac_1.pdf, id=474, page=1, 597.50829pt x 845.0471pt>
+<Electrac_1.pdf, id=547, page=1, 597.50829pt x 845.0471pt>
 File: Electrac_1.pdf Graphic file (type pdf)
 <use Electrac_1.pdf, page 1>
-Package pdftex.def Info: Electrac_1.pdf , page1 used on input line 360.
+Package pdftex.def Info: Electrac_1.pdf , page1 used on input line 486.
 (pdftex.def)             Requested size: 597.50682pt x 845.04504pt.
 File: Electrac_1.pdf Graphic file (type pdf)
 <use Electrac_1.pdf, page 1>
-Package pdftex.def Info: Electrac_1.pdf , page1 used on input line 360.
+Package pdftex.def Info: Electrac_1.pdf , page1 used on input line 486.
 (pdftex.def)             Requested size: 597.53416pt x 845.08372pt.
-[29]
+[37]
 File: Electrac_1.pdf Graphic file (type pdf)
 <use Electrac_1.pdf, page 1>
-Package pdftex.def Info: Electrac_1.pdf , page1 used on input line 360.
-(pdftex.def)             Requested size: 597.53416pt x 845.08372pt.
-File: Electrac_1.pdf Graphic file (type pdf)
-<use Electrac_1.pdf, page 1>
-Package pdftex.def Info: Electrac_1.pdf , page1 used on input line 360.
+Package pdftex.def Info: Electrac_1.pdf , page1 used on input line 486.
 (pdftex.def)             Requested size: 597.53416pt x 845.08372pt.
 File: Electrac_1.pdf Graphic file (type pdf)
 <use Electrac_1.pdf, page 1>
-Package pdftex.def Info: Electrac_1.pdf , page1 used on input line 360.
+Package pdftex.def Info: Electrac_1.pdf , page1 used on input line 486.
 (pdftex.def)             Requested size: 597.53416pt x 845.08372pt.
- [30 <./Electrac_1.pdf>]
+File: Electrac_1.pdf Graphic file (type pdf)
+<use Electrac_1.pdf, page 1>
+Package pdftex.def Info: Electrac_1.pdf , page1 used on input line 486.
+(pdftex.def)             Requested size: 597.53416pt x 845.08372pt.
+ [38 <./Electrac_1.pdf>]
 
 pdfTeX warning: pdflatex (file ./Electrac_1.pdf): PDF inclusion: found PDF vers
 ion <1.7>, but at most version <1.5> allowed
-<Electrac_1.pdf, id=516, page=2, 597.50829pt x 845.0471pt>
+<Electrac_1.pdf, id=590, page=2, 597.50829pt x 845.0471pt>
 File: Electrac_1.pdf Graphic file (type pdf)
 <use Electrac_1.pdf, page 2>
-Package pdftex.def Info: Electrac_1.pdf , page2 used on input line 360.
+Package pdftex.def Info: Electrac_1.pdf , page2 used on input line 486.
 (pdftex.def)             Requested size: 597.53416pt x 845.08372pt.
 File: Electrac_1.pdf Graphic file (type pdf)
 <use Electrac_1.pdf, page 2>
-Package pdftex.def Info: Electrac_1.pdf , page2 used on input line 360.
+Package pdftex.def Info: Electrac_1.pdf , page2 used on input line 486.
 (pdftex.def)             Requested size: 597.53416pt x 845.08372pt.
 File: Electrac_1.pdf Graphic file (type pdf)
 <use Electrac_1.pdf, page 2>
-Package pdftex.def Info: Electrac_1.pdf , page2 used on input line 360.
+Package pdftex.def Info: Electrac_1.pdf , page2 used on input line 486.
 (pdftex.def)             Requested size: 597.53416pt x 845.08372pt.
-[31 <./Electrac_1.pdf>]
+[39 <./Electrac_1.pdf>]
 \tf@toc=\write9
 \openout9 = `BrakeController.toc'.
 
@@ -2071,19 +2186,19 @@ Package pdftex.def Info: Electrac_1.pdf , page2 used on input line 360.
 \tf@lot=\write11
 \openout11 = `BrakeController.lot'.
 
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 362.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 362.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 488.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 488.
  (BrakeController.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 362.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 362.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 488.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 488.
 Package rerunfilecheck Info: File `BrakeController.out' has not changed.
-(rerunfilecheck)             Checksum: D04E63BB4ADE2CB57293AAAD7176255C;2291.
+(rerunfilecheck)             Checksum: 9D22A4080C9A441AB88DE38FBCFDB1C7;2251.
  ) 
 Here is how much of TeX's memory you used:
- 28897 strings out of 492946
- 497744 string characters out of 3125378
- 2626997 words of memory out of 3000000
- 32109 multiletter control sequences out of 15000+200000
+ 28990 strings out of 492946
+ 499891 string characters out of 3125378
+ 2630997 words of memory out of 3000000
+ 32170 multiletter control sequences out of 15000+200000
  82286 words of font info for 67 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
  1003i,18n,1003p,1999b,534s stack positions out of 5000i,500n,10000p,200000b,50000s
@@ -2106,9 +2221,9 @@ rd/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/lm/lmss12.pfb><C:/Users
 C:/Users/Richurd/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/lm/lmssdc
 10.pfb><C:/Users/Richurd/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/l
 m/lmsy10.pfb>
-Output written on BrakeController.pdf (43 pages, 1027510 bytes).
+Output written on BrakeController.pdf (51 pages, 1661251 bytes).
 PDF statistics:
- 596 PDF objects out of 1000 (max. 8388607)
- 90 named destinations out of 1000 (max. 500000)
- 462 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 674 PDF objects out of 1000 (max. 8388607)
+ 110 named destinations out of 1000 (max. 500000)
+ 514 words of extra memory for PDF output out of 10000 (max. 10000000)
 
